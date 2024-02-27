@@ -20,10 +20,13 @@
 
 title: Heitor Colangelo
 email: heitorcolangelo@gmail.com
-description: Code chaos, travel tales, and guitar antics – this is a wild ride where bugs, snapshots, and wrong chords unite for a comically charming experience!
-baseurl: "heitorcolangelo.github.io/docs/" # the subpath of your site, e.g. /blog
+description: >- # this means to ignore newlines until "baseurl:"
+  Code chaos, travel tales, and guitar antics.
+  This is a wild ride where bugs, snapshots, 
+  and wrong chords unite for a comically charming experience!
+baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://heitorcolangelo.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: hcolangelo
+twitter_username: heitorcolangelo
 github_username:  heitorcolangelo
 
 # Build settings
