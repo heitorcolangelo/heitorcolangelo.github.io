@@ -1,7 +1,7 @@
 ---
 layout: page
 current: about
-title: About
+title: Hello World!
 navigation: true
 logo: 'assets/images/ghost.png'
 class: page-template
@@ -12,7 +12,10 @@ Welcome to my digital space! I'm a passionate professional dedicated to creating
 
 Beyond coding, I love to travel and capture moments through my lens. Playing the guitar adds rhythm to my life. Let's embark on this tech-meets-creativity journey together!
 
-Contacts:
-heitorcolangelo@gmail.com
+## Contact
 
-https://www.linkedin.com/in/heitorcolangelo/
+Feel free to reach out to me on:
+- [Linkedin](https://www.linkedin.com/in/heitorcolangelo/)
+- [Email](heitorcolangelo@gmail.com)
+
+Thank you!
