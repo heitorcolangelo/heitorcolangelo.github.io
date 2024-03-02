@@ -11,7 +11,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   Code chaos, travel tales, and guitar antics.
   This is a wild ride where bugs, snapshots, 
   and wrong chords unite for a comically charming experience!
-baseurl: /
+baseurl: ""
 url: https://heitorcolangelo.dev # the base hostname & protocol for your site, e.g. http://example.com
 cover: assets/images/blog-cover.jpg
 logo: assets/images/blog-icon.png
