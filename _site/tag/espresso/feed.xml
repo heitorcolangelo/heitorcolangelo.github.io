@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom" >
+  <generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator>
+  <link href="http://localhost:4000/tag/espresso/feed.xml" rel="self" type="application/atom+xml" />
+  <link href="http://localhost:4000/" rel="alternate" type="text/html" />
+  <updated>2024-03-02T12:51:12+00:00</updated>
+  <id>http://localhost:4000/tag/espresso/feed.xml</id>
+
+  
+  
+  
+
+  
+    <title type="html">Heitor Colangelo | </title>
+  
+
+  
+    <subtitle>Code chaos, travel tales, and guitar antics. This is a wild ride where bugs, snapshots,  and wrong chords unite for a comically charming experience!</subtitle>
+  
+
+  
+
+  
+    
+      
+    
+  
+
+  
+  
+
+  
+    <entry>
+      <title type="html">Writing clean and readable Espresso tests with Kappuccino</title>
+      <link href="http://localhost:4000/writing-clean-and-readable-espresso-tests-with-kappuccino" rel="alternate" type="text/html" title="Writing clean and readable Espresso tests with Kappuccino" />
+      <published>2017-10-27T01:00:00+01:00</published>
+      <updated>2017-10-27T01:00:00+01:00</updated>
+      <id>http://localhost:4000/writing-clean-and-readable-espresso-tests-with-kappuccino</id>
+      <content type="html" xml:base="http://localhost:4000/writing-clean-and-readable-espresso-tests-with-kappuccino">&lt;h1 id=&quot;writing-clean-and-readable-espresso-tests-with-kappuccino&quot;&gt;Writing clean and readable Espresso tests with Kappuccino&lt;/h1&gt;
+
+&lt;p&gt;Using Espresso to write your UI tests can be quite repetitive and, as a consequence, boring. Most of the time you end up repeating the same methods a lot of times and you have to write a lot of code to make a simple task in your UI:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/800/1*aanpYt1jNyWmKyO2McEfdQ.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;When user types a not registered e-mail, the app shows register form.&lt;/p&gt;
+
+&lt;p&gt;Did you notice how many times the methods &lt;em&gt;onView, withId, check, matches, isDisplayed&lt;/em&gt; are repeated? That makes the code quite confusing to read and maintain. If you notice, the only thing that changes between each line, is the &lt;em&gt;id&lt;/em&gt; of the view that you want to check the visibility.&lt;/p&gt;
+
+&lt;p&gt;What if we could write this test in a more concise, easy and clean way? Like this:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/800/1*wjzVyVQZjqJMxMJxwAZrIQ.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Same test, more readable&lt;/p&gt;
+
+&lt;p&gt;Well, now with &lt;a href=&quot;https://github.com/heitorcolangelo/kappuccino&quot;&gt;Kappuccino&lt;/a&gt; you can!&lt;/p&gt;
+
+&lt;p&gt;When you write all of this lines of code&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/800/1*N0OpkopS_n5zlxMgGHjMTA.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;All you really want to do is: check if the views with these &lt;em&gt;ids&lt;/em&gt; (in purple) are displayed on the screen. So we used this idea and create a library so you can write your tests following this principle.&lt;/p&gt;
+
+&lt;p&gt;You can match the views with a lot of different matches:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;id (as the example above)&lt;/li&gt;
+  &lt;li&gt;text (passing a String, StringRes id or String matcher as parameter)&lt;/li&gt;
+  &lt;li&gt;contentDescription&lt;/li&gt;
+  &lt;li&gt;image&lt;/li&gt;
+  &lt;li&gt;background&lt;/li&gt;
+  &lt;li&gt;textColor&lt;/li&gt;
+  &lt;li&gt;parent&lt;/li&gt;
+  &lt;li&gt;descendant&lt;/li&gt;
+  &lt;li&gt;or a custom matcher if you need.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Also, kappuccino provides a lot of custom matchers that are commonly used during UI tests, making your task to write them much easier. For example, interact with a RecyclerView is simple like this:&lt;/p&gt;
+
+&lt;p&gt;And much more!&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Handle RuntimePermissions&lt;/li&gt;
+  &lt;li&gt;IntentMatcher&lt;/li&gt;
+  &lt;li&gt;Background Matcher&lt;/li&gt;
+  &lt;li&gt;TextColor Matcher&lt;/li&gt;
+  &lt;li&gt;Drawable Matcher (roadmap)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;You can add kappuccino by adding this to your project:&lt;/p&gt;
+
+&lt;p&gt;androidTestCompile ‘br.com.concretesolutions:kappuccino:1.0.6’&lt;/p&gt;
+
+&lt;p&gt;Feel free to fork us on &lt;a href=&quot;https://github.com/concretesolutions/kappuccino&quot;&gt;GitHub&lt;/a&gt;, test in your project and give us some feedback!&lt;br /&gt;
+Thanks!&lt;/p&gt;
+
+&lt;p&gt;By &lt;a href=&quot;https://medium.com/@heitorcolangelo&quot;&gt;Heitor Colangelo&lt;/a&gt; on &lt;a href=&quot;https://medium.com/p/60cfb29d96a0&quot;&gt;October 27, 2017&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://medium.com/@heitorcolangelo/writing-clean-and-readable-espresso-tests-with-kappuccino-60cfb29d96a0&quot;&gt;Canonical link&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Exported from &lt;a href=&quot;https://medium.com&quot;&gt;Medium&lt;/a&gt; on March 2, 2024.&lt;/p&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>Heitor Colangelo</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="espresso" />
+      
+
+      
+        <summary type="html">Writing clean and readable Espresso tests with Kappuccino</summary>
+      
+
+      
+      
+    </entry>
+  
+</feed>
