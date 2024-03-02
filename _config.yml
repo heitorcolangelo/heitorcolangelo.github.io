@@ -23,7 +23,7 @@ CNAME: heitorcolangelo.dev
 # Social info
 navigation: True # show the navbar links
 twitter: heitorcolangelo
-github:  heitorcolangelo
+github_username: heitorcolangelo
 
 # Disqus
 disqus: True
