@@ -2,10 +2,10 @@
 
 <feed xmlns="http://www.w3.org/2005/Atom" >
   <generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator>
-  <link href="https://heitorcolangelo.dev/author/heitorcolangelo/feed.xml" rel="self" type="application/atom+xml" />
-  <link href="https://heitorcolangelo.dev/" rel="alternate" type="text/html" />
-  <updated>2024-03-02T13:17:08+00:00</updated>
-  <id>https://heitorcolangelo.dev/author/heitorcolangelo/feed.xml</id>
+  <link href="http://localhost:4000/heitorcolangelo/author/heitorcolangelo/feed.xml" rel="self" type="application/atom+xml" />
+  <link href="http://localhost:4000/heitorcolangelo/" rel="alternate" type="text/html" />
+  <updated>2024-03-02T13:47:10+00:00</updated>
+  <id>http://localhost:4000/heitorcolangelo/author/heitorcolangelo/feed.xml</id>
 
   
   
@@ -16,7 +16,7 @@
   
 
   
-    <subtitle>Code chaos, travel tales, and guitar antics. This is a wild ride where bugs, snapshots,  and wrong chords unite for a comically charming experience!</subtitle>
+    <subtitle>Code chaos, travel tales, and guitar antics. This is a wild ride where bugs, snapshots, and wrong chords unite for a comically charming experience!</subtitle>
   
 
   
@@ -33,11 +33,11 @@
   
     <entry>
       <title type="html">Writing clean and readable Espresso tests with Kappuccino</title>
-      <link href="https://heitorcolangelo.dev/writing-clean-and-readable-espresso-tests-with-kappuccino" rel="alternate" type="text/html" title="Writing clean and readable Espresso tests with Kappuccino" />
+      <link href="http://localhost:4000/heitorcolangelo/writing-clean-and-readable-espresso-tests-with-kappuccino" rel="alternate" type="text/html" title="Writing clean and readable Espresso tests with Kappuccino" />
       <published>2017-10-27T01:00:00+01:00</published>
       <updated>2017-10-27T01:00:00+01:00</updated>
-      <id>https://heitorcolangelo.dev/writing-clean-and-readable-espresso-tests-with-kappuccino</id>
-      <content type="html" xml:base="https://heitorcolangelo.dev/writing-clean-and-readable-espresso-tests-with-kappuccino">&lt;h1 id=&quot;writing-clean-and-readable-espresso-tests-with-kappuccino&quot;&gt;Writing clean and readable Espresso tests with Kappuccino&lt;/h1&gt;
+      <id>http://localhost:4000/heitorcolangelo/writing-clean-and-readable-espresso-tests-with-kappuccino</id>
+      <content type="html" xml:base="http://localhost:4000/heitorcolangelo/writing-clean-and-readable-espresso-tests-with-kappuccino">&lt;h1 id=&quot;writing-clean-and-readable-espresso-tests-with-kappuccino&quot;&gt;Writing clean and readable Espresso tests with Kappuccino&lt;/h1&gt;
 
 &lt;p&gt;Using Espresso to write your UI tests can be quite repetitive and, as a consequence, boring. Most of the time you end up repeating the same methods a lot of times and you have to write a lot of code to make a simple task in your UI:&lt;/p&gt;
 
