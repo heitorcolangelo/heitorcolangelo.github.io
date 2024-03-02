@@ -1,13 +1,16 @@
 ---
+title: I Have a Dream
+date: 1963-08-28 10:18:00 Z
+categories:
+- docs
+tags:
+- speeches
 layout: post
 current: post
 cover: assets/images/sky.jpg
-navigation: True
-title: I Have a Dream
-date: 1963-08-28 10:18:00
-tags: speeches
+navigation: true
 class: post-template
-subclass: 'post'
+subclass: post
 author: martin
 ---
 

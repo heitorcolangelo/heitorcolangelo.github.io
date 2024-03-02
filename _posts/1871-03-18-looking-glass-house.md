@@ -1,13 +1,16 @@
 ---
+title: Looking-Glass house
+date: 1871-03-18 10:18:00 Z
+categories:
+- docs
+tags:
+- fiction
 layout: post
 current: post
-cover: 'assets/images/summit.jpg'
-navigation: True
-title: Looking-Glass house
-date: 1871-03-18 10:18:00
-tags: fiction
+cover: assets/images/summit.jpg
+navigation: true
 class: post-template
-subclass: 'post'
+subclass: post
 author: lewis
 ---
 
