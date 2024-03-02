@@ -1,17 +1,15 @@
 ---
-title: Writing clean and readable Espresso tests with Kappuccino
-date: 2017-10-27 00:00:00 Z
-tags:
-- espresso
 layout: post
 current: post
 cover: assets/images/espresso-android.png
-navigation: true
+navigation: True
+title: Writing clean and readable Espresso tests with Kappuccino
+date: 2017-10-27 00:00:00
+tags: [espresso]
 class: post-template
-subclass: post
+subclass: 'post'
 author: heitorcolangelo
 ---
-
 # Writing clean and readable Espresso tests with Kappuccino
 
 Using Espresso to write your UI tests can be quite repetitive and, as a consequence, boring. Most of the time you end up repeating the same methods a lot of times and you have to write a lot of code to make a simple task in your UI:
