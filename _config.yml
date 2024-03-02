@@ -5,30 +5,28 @@ paginate: 100 # it will paginate after this number
 language: 'en-uk'
 words_per_minute: 200
 
+# edit baseurl to simply '/' if using as your personal page (instead of a project page)
+baseurl: /
+url: https://heitorcolangelo.dev # the base hostname & protocol for your site, e.g. http://example.com
+
 # Website info
 title: Heitor Colangelo
-description: >- # this means to ignore newlines until "baseurl:"
-  Code chaos, travel tales, and guitar antics.
-  This is a wild ride where bugs, snapshots, 
-  and wrong chords unite for a comically charming experience!
-baseurl: /
-url: https://heitorcolangelo.github.io # the base hostname & protocol for your site, e.g. http://example.com
+description: Code chaos, travel tales, and guitar antics. This is a wild ride where bugs, snapshots, and wrong chords unite for a comically charming experience!
 cover: assets/images/blog-cover.jpg
 logo: assets/images/blog-icon.png
 logo_dark: assets/images/favicon.png
 favicon: assets/images/favicon.png
+production_url: https://heitorcolangelo.dev
+source_url: https://github.com/heitorcolangelo/heitorcolangelo.github.io
 CNAME: heitorcolangelo.dev
 
 # Social info
 navigation: True # show the navbar links
-subscribers: False # you need to connect an external service for this to work,
-# if 'True' the submit button is disabled for now, but you can change that
-# by editing `_includes/subscribe-form.html`
-twitter_username: heitorcolangelo
-github_username:  heitorcolangelo
+twitter: heitorcolangelo
+github:  heitorcolangelo
 
 # Disqus
-disqus: False
+disqus: True
 disqus_shortname: heitorcolangelo # replace with your disqus username
 
 # Google Analytics
@@ -44,7 +42,7 @@ permalink: /:title
 
 # gems and other configs
 plugins_dir: [_plugins]
-plugins: [jekyll-paginate, jekyll-feed]
+plugins: [jekyll-paginate, jekyll-feed, jekyll-seo-tag, jekyll-sitemap]
 
 feed:
   path: feed.xml
@@ -70,12 +68,10 @@ feed:
 safe: False
 lsi: False
 username: heitorcolangelo
-repo: heitorcolangelo.github.io
-branch: main
-relative_source: ../heitorcolangelo/
+repo: heitorcolangelo
+branch: master
+relative_source: ../heitorcolangelo.dev/
 destination: _site
-production_url: https://heitorcolangelo.dev
-source_url: https://github.com/heitorcolangelo/heitorcolangelo.github.io
 
 exclude:
   - assets/css
