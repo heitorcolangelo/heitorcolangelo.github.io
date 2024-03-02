@@ -70,7 +70,7 @@ feed:
 safe: False
 lsi: False
 username: heitorcolangelo
-repo: heitorcolangelo
+repo: heitorcolangelo.github.io
 branch: main
 relative_source: ../heitorcolangelo/
 destination: _site
