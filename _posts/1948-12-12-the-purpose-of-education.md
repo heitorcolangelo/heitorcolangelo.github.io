@@ -1,13 +1,14 @@
 ---
+title: The Purpose of Education
+date: 1948-12-12 10:18:00 Z
+tags:
+- speeches
 layout: post
 current: post
 cover: assets/images/grapes.jpg
-navigation: True
-title: The Purpose of Education
-date: 1948-12-12 10:18:00
-tags: speeches
+navigation: true
 class: post-template
-subclass: 'post'
+subclass: post
 author: martin
 ---
 
