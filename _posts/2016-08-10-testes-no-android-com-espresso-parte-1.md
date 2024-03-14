@@ -1,14 +1,14 @@
 ---
-title: Testes no Android com Espresso — parte 1
-date: 2016-08-10 00:00:00 Z
-tags:
-- software-testing
-- android
 layout: post
-class: post-template
-subclass: post
-author: heitor
+current: post
 cover: assets/images/testes-no-android-com-espresso.png
+navigation: True
+title: Testes no Android com Espresso — parte 1
+date: 2016-08-10 00:00:00
+tags: [software-testing, android]
+class: post-template
+subclass: 'post'
+author: heitor
 ---
 
 Nesta série de posts, vou mostrar como realizar testes eficientes no seu app Android utilizando o [Espresso](https://google.github.io/android-testing-support-library/docs/espresso/). Além disso, conforme formos evoluindo, vou dando dicas das principais dificuldades que você provavelmente irá encontrar pelo caminho, e como resolvê-las.
@@ -59,5 +59,3 @@ Ok, agora que já configuramos o projeto, vamos começar a fazer nossos testes. 
 Por enquanto a única coisa que mudou no projeto que você clonou (branch `start_project`) foi o arquivo `build.gradle`. De qualquer modo, o estado final do app nesta parte do tutorial está no branch [`part_1`](https://github.com/heitorcolangelo/EspressoTests/tree/part_1).
 
 [Ir para parte 2 — Asserções simples e interações com views >>](https://medium.com/@heitorcolangelo/testes-no-android-com-espresso-parte-2-5180ee03ed9a#.7hwn7r3fe)
-
-![](https://medium.com/_/stat?event=post.clientViewed&referrerSource=full_rss&postId=8d739672a235)
