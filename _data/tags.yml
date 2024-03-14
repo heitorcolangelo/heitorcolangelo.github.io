@@ -14,3 +14,11 @@ getting-started:
   name: getting-started
   description: False
   cover: False
+software-testing:
+  name: software-testing
+  description: False
+  cover: False
+android:
+  name: android
+  description: False
+  cover: False
