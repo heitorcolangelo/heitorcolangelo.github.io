@@ -1,17 +1,13 @@
 ---
 title: Testes no Android com Espresso — parte 1
 date: 2016-08-10 00:00:00 Z
-tags:
-- software-testing
-- android
+tags: [software-testing, android]
 layout: post
 class: post-template
 subclass: post
 author: heitor
 cover: assets/images/testes-no-android-com-espresso.png
 ---
-
-![](https://cdn-images-1.medium.com/max/1024/1*99qTbnhUu3jQsGn3eWIgrA.png)
 
 Nesta série de posts, vou mostrar como realizar testes eficientes no seu app Android utilizando o [Espresso](https://google.github.io/android-testing-support-library/docs/espresso/). Além disso, conforme formos evoluindo, vou dando dicas das principais dificuldades que você provavelmente irá encontrar pelo caminho, e como resolvê-las.
 
@@ -45,13 +41,14 @@ androidTestCompile 'com.android.support.test:runner:1.0.1'
 ```
 
 Agora dê um sync no gradle e pronto, o Espresso já está configurado corretamente. 
-**Importante:** o gradle provavelmente irá reclamar por causa da dependência `support-annotations`; para resolver este problema, adicione esta linha nas suas dependências.
+
+**Importante:** o gradle provavelmente irá reclamar por causa da dependência `support-annotations`; para resolver este problema, adicione esta linha nas suas dependências:
 
 ```groovy
 androidTestCompile "com.android.support:support-annotations:$androidSupportVersion"
 ```
 
-onde `$androidSupportVersion` é a versão que você está utilizando para support library.
+Onde `$androidSupportVersion` é a versão que você está utilizando para support library.
 
 Não vou me aprofundar muito nas causas deste problema, não é o foco do post. Se quiser saber mais ou ainda estiver com problemas de dependência, dê uma olhada [neste link](http://stackoverflow.com/questions/33317555/conflict-with-dependency-com-android-supportsupport-annotations-resolved-ver).
 
