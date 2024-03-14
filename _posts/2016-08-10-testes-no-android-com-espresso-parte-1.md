@@ -5,6 +5,10 @@ tags:
 - software-testing
 - android
 layout: post
+class: post-template
+subclass: 'post'
+author: heitor
+cover: assets/images/testes-no-android-com-espresso.png
 ---
 
 ![](https://cdn-images-1.medium.com/max/1024/1*99qTbnhUu3jQsGn3eWIgrA.png)
@@ -27,20 +31,21 @@ As bibliotecas que estou utilizando para o app são:
 *   [OkHttp](http://square.github.io/okhttp/)
 *   [Retrofit](http://square.github.io/retrofit/)
 
-É importante que você entenda bem o projeto antes de começar os testes. Por esse motivo, deixei o app bem simples para que este entendimento não tome muito tempo. Para iniciar, clone o branch “start\_project” do projeto no github.
+É importante que você entenda bem o projeto antes de começar os testes. Por esse motivo, deixei o app bem simples para que este entendimento não tome muito tempo. Para iniciar, clone o branch `start_project` do projeto no github.
 
 Sem mais enrolação, vamos à prática.
 
 **Configurando o Espresso no projeto**
 
-No arquivo build.gradle do projeto, adicione as seguintes dependências:
+No arquivo `build.gradle` do projeto, adicione as seguintes dependências:
 
 ```groovy
 androidTestCompile 'com.android.support.test.espresso:espresso-core:3.0.1'  
 androidTestCompile 'com.android.support.test:runner:1.0.1'
 ```
 
-Agora dê um sync no gradle e pronto, o Espresso já está configurado corretamente. **Importante:** o gradle provavelmente irá reclamar por causa da dependência “support-annotations”; para resolver este problema, adicione esta linha nas suas dependências.
+Agora dê um sync no gradle e pronto, o Espresso já está configurado corretamente. 
+**Importante:** o gradle provavelmente irá reclamar por causa da dependência `support-annotations`; para resolver este problema, adicione esta linha nas suas dependências.
 
 ```groovy
 androidTestCompile "com.android.support:support-annotations:$androidSupportVersion"
@@ -52,7 +57,7 @@ Não vou me aprofundar muito nas causas deste problema, não é o foco do post. 
 
 Ok, agora que já configuramos o projeto, vamos começar a fazer nossos testes. Até aqui, se você tiver alguma dúvida ou teve algum problema, deixe seu comentário abaixo.
 
-Por enquanto a única coisa que mudou no projeto que você clonou (branch ‘start\_project’) foi o arquivo build.gradle. De qualquer modo, o estado final do app nesta parte do tutorial está no branch ‘[part\_1](https://github.com/heitorcolangelo/EspressoTests/tree/part_1)’.
+Por enquanto a única coisa que mudou no projeto que você clonou (branch `start_project`) foi o arquivo `build.gradle`. De qualquer modo, o estado final do app nesta parte do tutorial está no branch [`part_1`](https://github.com/heitorcolangelo/EspressoTests/tree/part_1).
 
 [Ir para parte 2 — Asserções simples e interações com views >>](https://medium.com/@heitorcolangelo/testes-no-android-com-espresso-parte-2-5180ee03ed9a#.7hwn7r3fe)
 
