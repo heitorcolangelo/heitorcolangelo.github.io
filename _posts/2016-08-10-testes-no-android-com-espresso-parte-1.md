@@ -6,7 +6,7 @@ tags:
 - android
 layout: post
 class: post-template
-subclass: 'post'
+subclass: post
 author: heitor
 cover: assets/images/testes-no-android-com-espresso.png
 ---
