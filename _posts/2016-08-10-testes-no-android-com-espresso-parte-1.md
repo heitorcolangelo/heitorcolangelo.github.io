@@ -1,13 +1,15 @@
 ---
+title: Testes no Android com Espresso — parte 1
+date: 2016-08-10 00:00:00 Z
+tags:
+- software-testing
+- android
 layout: post
 current: post
 cover: assets/images/testes-no-android-com-espresso.png
-navigation: True
-title: Testes no Android com Espresso — parte 1
-date: 2016-08-10 00:00:00
-tags: [software-testing, android]
+navigation: true
 class: post-template
-subclass: 'post'
+subclass: post
 author: heitor
 ---
 
