@@ -96,7 +96,7 @@ Agora, para rodar este teste, basta clicar no botão direito do mouse sobre o m�
 
 Certo, mas como eu garanto que o Espresso está realmente funcionando e olhando se minhas views estão aparecendo na tela? Para garantir isso, vamos alterar a primeira linha deste teste que fizemos:
 
-`onView(withId(R.id.login_image)).check(matches(**not(**isDisplayed()**)**));
+`onView(withId(R.id.login_image)).check(matches( not(isDisplayed()) ));`
 
 O método `not()` irá inverter o resultado que esperávamos. Então, estou dizendo neste teste que a view com id `login_image` **não** estará visível na tela, o que não é verdade, pois ao iniciar a tela, a imagem estará visível. Então o teste deve obrigatoriamente falhar. Se rodarmos o teste novamente:
 
@@ -204,7 +204,7 @@ Coloque um _breakpoint_ nesta linha e vamos ver a tela do emulador neste moment
 Repare que o teclado virtual está ocupando uma boa parte da tela, inclusive ele está cobrindo o nosso botão de login, por isso o Espresso não pode clicar no botão. Para corrigir este problema vamos utilizar o método _closeSoftKeyboard()._
 
 ```java
-onView(withId(notEmptyFieldId)).perform(typeText("defaultText"),  **_closeSoftKeyboard_()**);
+onView(withId(notEmptyFieldId)).perform(typeText("defaultText"), closeSoftKeyboard() );
 ```
 
 Este método irá fechar o teclado virtual após digitarmos o texto “defaultText”. Nosso botão de login ficará visível e o Espresso conseguirá clicar nele. Rode o teste novamente, acredito que agora irá passar.
