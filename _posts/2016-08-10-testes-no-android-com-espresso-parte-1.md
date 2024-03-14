@@ -7,7 +7,6 @@ tags:
 layout: post
 ---
 
-
 ![](https://cdn-images-1.medium.com/max/1024/1*99qTbnhUu3jQsGn3eWIgrA.png)
 
 Nesta série de posts, vou mostrar como realizar testes eficientes no seu app Android utilizando o [Espresso](https://google.github.io/android-testing-support-library/docs/espresso/). Além disso, conforme formos evoluindo, vou dando dicas das principais dificuldades que você provavelmente irá encontrar pelo caminho, e como resolvê-las.
