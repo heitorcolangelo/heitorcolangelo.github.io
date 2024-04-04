@@ -1,5 +1,5 @@
 ---
-title: Android Testing with Espresso — Part 4
+title: Android Testing with Espresso — Part 3
 date: 2016-08-10 00:00:00 Z
 tags:
 - software-testing
@@ -17,7 +17,7 @@ author: heitor
 
 ### Simulating Intent Results
 
-In the [previous post](https://medium.com/@heitorcolangelo/testes-no-android-com-espresso-parte-2-5180ee03ed9a#.7hwn7r3fe), we performed our first test on the Login screen. If you want to start from this post, use the 'part_2' branch of the project.
+In the [previous post](https://heitorcolangelo.dev/android-testing-with-espresso-part-2), we performed our first test on the Login screen. If you want to start from this post, use the 'part_2' branch of the project.
 
 **Simulating Intent Results**
 
