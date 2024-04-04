@@ -231,4 +231,4 @@ At the end of this step, your code should look like the [`part_2`](https://githu
 
 If you have any questions, suggestions, or found any incorrect information in this post, leave a comment below.
 
-[Go to part 3 — testing intents >>](https://medium.com/@heitorcolangelo/testes-no-android-com-espresso-parte-3-b1d690e7bcc8#.qe0z1klwn)
+[Go to part 3 — testing intents >>](https://heitorcolangelo.dev/android-testing-with-espresso-part-3)
