@@ -13,7 +13,7 @@ subclass: post
 author: heitor
 ---
 
-* This post was translated from Portuguese using GPT.
+> This post was translated from Portuguese using generative AI.
 
 In this series of posts, I will show you how to efficiently test your Android app using [Espresso](https://google.github.io/android-testing-support-library/docs/espresso/). Additionally, as we progress, I'll provide tips on the main challenges you'll likely encounter along the way and how to solve them.
 

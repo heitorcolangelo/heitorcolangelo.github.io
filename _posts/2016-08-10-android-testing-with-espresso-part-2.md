@@ -13,7 +13,7 @@ subclass: post
 author: heitor
 ---
 
-* This post was translated from Portuguese using GPT.
+> This post was translated from Portuguese using generative AI.
 
 #### Simple assertions and interactions with views.
 
