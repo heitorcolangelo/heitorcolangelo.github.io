@@ -2,14 +2,15 @@
 title: Writing clean and readable Espresso tests with Kappuccino
 date: 2017-10-27 00:00:00 Z
 tags:
+- software-testing
 - espresso
 layout: post
 current: post
-cover: assets/images/espresso-android.png
+cover: assets/images/kappuccino-cover.png
 navigation: true
 class: post-template
 subclass: post
-author: heitorcolangelo
+author: heitor
 ---
 
 # Writing clean and readable Espresso tests with Kappuccino
@@ -63,10 +64,5 @@ You can add kappuccino by adding this to your project:
 androidTestCompile 'br.com.concretesolutions:kappuccino:1.0.6'
 
 Feel free to fork us on [GitHub](https://github.com/concretesolutions/kappuccino), test in your project and give us some feedback!  
+
 Thanks!
-
-By [Heitor Colangelo](https://medium.com/@heitorcolangelo) on [October 27, 2017](https://medium.com/p/60cfb29d96a0).
-
-[Canonical link](https://medium.com/@heitorcolangelo/writing-clean-and-readable-espresso-tests-with-kappuccino-60cfb29d96a0)
-
-Exported from [Medium](https://medium.com) on March 2, 2024.
