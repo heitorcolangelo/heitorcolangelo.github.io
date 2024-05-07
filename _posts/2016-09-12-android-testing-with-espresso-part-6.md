@@ -13,6 +13,8 @@ subclass: post
 author: heitor
 ---
 
+> This post was translated from Portuguese using generative AI.
+
 In the [previous post](https://heitorcolangelo.dev/android-testing-with-espresso-part-5), we learned how to make assertions and interactions in a _recyclerview_. If you want to start from this post, use the 'part\_5' branch of the project.
 
 In this part of the tutorial, we will see how to make a custom _matcher_ and learn how to handle runtime permissions. For this, it was necessary to make an adjustment in the initial project. Check this change in the _ImageAndTextView.java (line 47)_ and in the _UserDetailsActivity_ class. Understand this change well before proceeding.
