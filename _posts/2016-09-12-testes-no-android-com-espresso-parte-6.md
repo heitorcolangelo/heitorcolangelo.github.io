@@ -22,11 +22,9 @@ Primeiro cenário
 
 A UserDetailsActivity possui o seguinte layout:
 
-```
 <p style="text-align:center;">
-  <img src="https://miro.medium.com/v2/resize:fit:696/format:webp/1*2E5Ck9MdFOVgEHsr6LvHcw.png" />
+  <img src="https://miro.medium.com/v2/resize:fit:696/format:webp/1*2E5Ck9MdFOVgEHsr6LvHcw.png" alt=""/>
 </p>
-```
 
 Temos a foto do usuário, o nome, telefone, e-mail e endereço. Este pode ser o primeiro cenário: verificar se todas as informações aparecem na tela. Como é um cenário simples, vou deixar como tarefa para você implementar.
 
@@ -35,11 +33,9 @@ Segundo cenário
 
 Com exceção do nome, o usuário nem sempre terá todos estes dados e, caso ele não tenha telefone, e-mail ou endereço, a mensagem “_No info available._” deve aparecer, em vermelho. Conforme imagem abaixo:
 
-```
 <p style="text-align:center;">
-  <img src="https://miro.medium.com/v2/resize:fit:684/format:webp/1*ogfkyvm6gtxJeFm-mO3rwA.png">
+  <img src="https://miro.medium.com/v2/resize:fit:684/format:webp/1*ogfkyvm6gtxJeFm-mO3rwA.png" alt="">
 </p>
-```
 
 Então, um outro cenário é: verificar se o texto _“No info available.”_ aparece quando o usuário não possui e-mail, telefone ou endereço.
 
@@ -216,7 +212,7 @@ Seguindo com nosso teste, temos o UiAutomator configurado corretamente. Vamos ut
 ```java
 /**
  * From: https://gist.github.com/rocboronat/65b1187a9fca9eabfebb5121d818a3c4
-    */
+ */
 public class PermissionUtils {
     private static final int PERMISSIONS_DIALOG_DELAY = 3000;
     private static final int GRANT_BUTTON_INDEX = 1;
