@@ -15,7 +15,7 @@ author: heitor
 
 #### Asserções simples e interações com views.
 
-Na [parte 1](https://heitorcolangelo.dev/testes-no-android-com-espresso-parte-2) nós vimos como configurar nosso projeto. Se você quiser começar a partir desta parte, clone o projeto [EspressoTests](https://github.com/heitorcolangelo/EspressoTests) no github e faça um fork da branch ‘part\_1’, que representa o estado do projeto ao final da parte 1.
+Na [parte 1](https://heitorcolangelo.dev/testes-no-android-com-espresso-parte-1) nós vimos como configurar nosso projeto. Se você quiser começar a partir desta parte, clone o projeto [EspressoTests](https://github.com/heitorcolangelo/EspressoTests) no github e faça um fork da branch ‘part\_1’, que representa o estado do projeto ao final da parte 1.
 
 **Criando o primeiro teste**
 

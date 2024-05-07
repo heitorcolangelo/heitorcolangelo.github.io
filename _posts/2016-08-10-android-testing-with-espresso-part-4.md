@@ -15,7 +15,7 @@ author: heitor
 
 > This post was translated from Portuguese using generative AI.
 
-In the [previous post](https://heitorcolangelo.dev/testes-no-android-com-espresso-parte-3), we learned how to mock Android intents. If you want to start from this post, use the 'part_3' branch of the project.
+In the [previous post](https://heitorcolangelo.dev/android-testing-with-espresso-part-3), we learned how to mock Android intents. If you want to start from this post, use the 'part_3' branch of the project.
 
 Scenarios for MainActivity
 ------------------------

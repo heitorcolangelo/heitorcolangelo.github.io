@@ -15,7 +15,7 @@ author: heitor
 
 > This post was translated from Portuguese using generative AI.
 
-In the [previous post](https://heitorcolangelo.dev/testing-on-android-with-espresso-part-6), we learned how to create _custom matchers_ and how to handle _run time permissions_ with UiAutomator. In this final part, I will focus more on some tips that I find important, I will also talk about TestButler and Robots Pattern. To follow along with this part, use the ‘[part\_7](https://github.com/heitorcolangelo/EspressoTests/tree/part_7)’ branch of the project.
+In the [previous post](https://heitorcolangelo.dev/android-testing-with-espresso-part-6), we learned how to create _custom matchers_ and how to handle _run time permissions_ with UiAutomator. In this final part, I will focus more on some tips that I find important, I will also talk about TestButler and Robots Pattern. To follow along with this part, use the ‘[part\_7](https://github.com/heitorcolangelo/EspressoTests/tree/part_7)’ branch of the project.
 
 Loading Animations x AlertDialogs
 --------------------------------
