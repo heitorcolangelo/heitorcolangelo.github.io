@@ -198,6 +198,15 @@ Então, é só você copiar o json que aparecer no navegador e colocar em uma _s
 
 Agora vamos escrever nosso primeiro teste para a MainActivity. Neste teste iremos verificar se, quando a API retorna com sucesso os usuários, nós visualizamos a lista de usuários na tela.
 
+```java
+@Test
+public void whenResultIsOk_shouldDisplayListWithUsers() {
+    server.enqueue(new MockResponse().setResponseCode(200).setBody(Mocks.SUCCESS));
+    mActivityRule.launchActivity(new Intent());
+    onView(withId(R.id.recycler_view)).check(matches(isDisplayed()));
+}
+```
+
 Linha 3: estamos chamando o método _enqueue_ do MockWebServer. Este método vai enfileirar (_enqueue_, em inglês) o objeto [MockResponse](https://github.com/square/okhttp/blob/master/mockwebserver/src/main/java/okhttp3/mockwebserver/MockResponse.java) que passamos como parâmetro. Estamos definindo o _responseCode_ como 200, ou seja, uma requisição com sucesso. Também estamos definindo o _body_ com o mock que acabamos de copiar e colocamos na interface Mocks.java. Resumindo: estamos dizendo para o MockWebServer: “Quando chegar uma requisição para você, retorne este MockResponse” ;
 
 Linha 4: iniciamos a activity, passamos uma intent simples, uma vez que não é necessário nenhum extra nesta activity;
