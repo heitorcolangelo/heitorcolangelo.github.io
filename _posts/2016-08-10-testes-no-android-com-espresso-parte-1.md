@@ -60,4 +60,4 @@ Ok, agora que já configuramos o projeto, vamos começar a fazer nossos testes. 
 
 Por enquanto a única coisa que mudou no projeto que você clonou (branch `start_project`) foi o arquivo `build.gradle`. De qualquer modo, o estado final do app nesta parte do tutorial está no branch [`part_1`](https://github.com/heitorcolangelo/EspressoTests/tree/part_1).
 
-[Ir para parte 2 — Asserções simples e interações com views >>](https://medium.com/@heitorcolangelo/testes-no-android-com-espresso-parte-2-5180ee03ed9a#.7hwn7r3fe)
+[Ir para parte 2 — Asserções simples e interações com views >>](https://heitorcolangelo.dev/testes-no-android-com-espresso-parte-2)

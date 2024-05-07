@@ -13,7 +13,7 @@ subclass: post
 author: heitor
 ---
 
-No [post anterior](https://medium.com/@heitorcolangelo/testes-no-android-com-espresso-parte-2-5180ee03ed9a#.7hwn7r3fe) fizemos nosso primeiro teste na tela de Login. Caso queira iniciar a partir deste post, utilize o branch ‘[part\_2](https://github.com/heitorcolangelo/EspressoTests/tree/part_2)’ do projeto.
+No [post anterior](https://heitorcolangelo.dev/testes-no-android-com-espresso-parte-2) fizemos nosso primeiro teste na tela de Login. Caso queira iniciar a partir deste post, utilize o branch ‘[part\_2](https://github.com/heitorcolangelo/EspressoTests/tree/part_2)’ do projeto.
 
 **Simulando resultados de intents.**
 
@@ -85,4 +85,4 @@ Rode o teste, ele deve passar sem problemas e a MainActivity não será iniciada
 
 Se tiver alguma dúvida, sugestão, ou se encontrou um erro no post, deixe um comentário.
 
-[Ir para Parte 4 — mockando requisições para a API >>](https://medium.com/@heitorcolangelo/testes-no-android-com-espresso-parte-4-6107e3e023bc#.2zuajz688)
+[Ir para Parte 4 — mockando requisições para a API >>](https://heitorcolangelo.dev/testes-no-android-com-espresso-parte-4)
