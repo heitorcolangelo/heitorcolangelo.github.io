@@ -13,7 +13,8 @@ subclass: post
 author: heitor
 ---
 
-No [post anterior](https://heitorcolangelo.dev/testes-no-android-com-espresso-parte-3) do projeto.
+No [post anterior](https://heitorcolangelo.dev/testes-no-android-com-espresso-parte-3) aprendemos como mockar as intents do Android. Caso queira iniciar a partir deste post, utilize o branch ‘part_3’ do projeto.
+
 
 Cenários da MainActivity
 ------------------------
