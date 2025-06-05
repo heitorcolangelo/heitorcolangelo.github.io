@@ -51,6 +51,21 @@ You can match the views with a lot of different matches:
 
 Also, kappuccino provides a lot of custom matchers that are commonly used during UI tests, making your task to write them much easier. For example, interact with a RecyclerView is simple like this:
 
+```kotlin
+@Test fun recyclerView_example() {
+    recyclerView(R.id.recycler_view) {
+        sizeIs(10)
+        atPosition(3) {
+            displayed {
+                id(R.id.item_description)
+                text(R.string.description_text)
+                text("Item header text")
+            }
+        }
+    }
+}
+```
+
 And much more!
 
 *   Handle RuntimePermissions
@@ -61,7 +76,9 @@ And much more!
 
 You can add kappuccino by adding this to your project:
 
+```
 androidTestCompile 'br.com.concretesolutions:kappuccino:1.0.6'
+```
 
 Feel free to fork us on [GitHub](https://github.com/concretesolutions/kappuccino), test in your project and give us some feedback!  
 
