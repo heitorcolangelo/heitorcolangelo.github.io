@@ -1,0 +1,35 @@
+name: Lighthouse CI (non-blocking)
+
+on:
+  pull_request:
+    branches: ["main"]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  lighthouse:
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Run Lighthouse CI
+        id: lighthouse
+        uses: treosh/lighthouse-ci-action@v12
+        continue-on-error: true
+        with:
+          urls: |
+            https://heitorcolangelo.dev
+            https://heitorcolangelo.dev/our-journey-into-mobile-e2e-testing
+          uploadArtifacts: true
+          temporaryPublicStorage: true
+
+      - name: Upload Lighthouse reports artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: lighthouse-reports
+          path: ${{ steps.lighthouse.outputs.resultsPath }}
+          if-no-files-found: ignore
