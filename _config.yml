@@ -11,7 +11,7 @@ collections:
 markdown: kramdown
 highlighter: rouge
 paginate: 100
-language: en-uk
+language: en-GB
 words_per_minute: 200
 baseurl: "/"
 url: https://heitorcolangelo.dev
