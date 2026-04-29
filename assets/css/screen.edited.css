@@ -150,3 +150,19 @@ td.code {
 .highlight table td:last-child {
     background: none;
 }
+
+/* Lighthouse accessibility follow-ups */
+.post-card-tags,
+.reading-time {
+    color: #4f5d6b;
+}
+
+.post-full-meta a {
+    color: #2d6ea3;
+}
+
+.post-full-content a {
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    text-decoration-thickness: 1.5px;
+}
