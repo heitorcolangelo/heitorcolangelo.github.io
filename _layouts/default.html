@@ -75,7 +75,7 @@
     <!-- The big email subscribe modal content -->
     {% if site.subscribers %}
         <div id="subscribe" class="subscribe-overlay">
-            <a class="subscribe-overlay-close" href="#"></a>
+            <a class="subscribe-overlay-close" href="#" aria-label="Close subscribe dialog" title="Close"></a>
             <div class="subscribe-overlay-content">
                 {% if site.logo %}
                     <img class="subscribe-overlay-logo" src="{{ site.baseurl }}{{ site.logo }}" alt="{{ site.title }}" />
