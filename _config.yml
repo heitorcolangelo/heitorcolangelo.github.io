@@ -13,7 +13,7 @@ highlighter: rouge
 paginate: 100
 language: en-GB
 words_per_minute: 200
-baseurl: "/"
+baseurl: ""
 url: https://heitorcolangelo.dev
 description: Code chaos, travel tales, and guitar antics. This is a wild ride where
   bugs, snapshots, and wrong chords unite for a comically charming experience!
