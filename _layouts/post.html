@@ -140,7 +140,7 @@ into the {body} of the default.hbs template -->
                         <header class="read-next-card-header">
                             <small class="read-next-card-header-sitetitle">&mdash; {{ site.title }} &mdash;</small>
                             {% if primary %}
-                                <h3 class="read-next-card-header-title"><a href="{{ site.baseurl }}tag/{{ primary | slugify: "latin" }}/">{{ primary | capitalize }}</a></h3>
+                                <h2 class="read-next-card-header-title"><a href="{{ site.baseurl }}tag/{{ primary | slugify: "latin" }}/">{{ primary | capitalize }}</a></h2>
                             {% endif %}
                         </header>
                         <div class="read-next-divider">{% include infinity.html %}</div>
