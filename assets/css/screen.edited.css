@@ -161,6 +161,10 @@ td.code {
     color: #2d6ea3;
 }
 
+.post-full-meta-date {
+    color: #2d6ea3;
+}
+
 .post-full-content a {
     text-decoration: underline;
     text-underline-offset: 2px;
