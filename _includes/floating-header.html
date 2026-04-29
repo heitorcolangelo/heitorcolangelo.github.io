@@ -11,15 +11,22 @@
     <div class="floating-header-title">{{ page.title }}</div>
     <div class="floating-header-share">
         <div class="floating-header-share-label">Share this {% include point.html %}</div>
-        <a class="floating-header-share-tw" href="https://twitter.com/share?text={{ page.title | url_encode }}&amp;url={{ page.url | absolute_url }}"
-            aria-label="Share this post on X (Twitter)"
-            onclick="window.open(this.href, 'share-twitter', 'width=550,height=235');return false;">
-            {% include twitter.html %}
-        </a>
         <a class="floating-header-share-fb" href="https://www.facebook.com/sharer/sharer.php?u={{ page.url | absolute_url }}"
             aria-label="Share this post on Facebook"
             onclick="window.open(this.href, 'share-facebook','width=580,height=296');return false;">
             {% include facebook.html %}
+        </a>
+        <a class="floating-header-share-fb" href="https://www.linkedin.com/sharing/share-offsite/?url={{ page.url | absolute_url | url_encode }}"
+            aria-label="Share this post on LinkedIn"
+            onclick="window.open(this.href, 'share-linkedin','width=600,height=600');return false;"
+            style="background:#0a66c2;">
+            {% include linkedin.html %}
+        </a>
+        <a class="floating-header-share-fb" href="https://www.instagram.com/"
+            aria-label="Share this post on Instagram (opens Instagram and copies link)"
+            onclick="if (navigator.clipboard) { navigator.clipboard.writeText('{{ page.url | absolute_url }}'); } window.open(this.href, 'share-instagram','width=1000,height=800'); return false;"
+            style="background:#e4405f;">
+            {% include instagram.html %}
         </a>
     </div>
     <progress class="progress" value="0">
