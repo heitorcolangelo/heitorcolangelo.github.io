@@ -44,6 +44,7 @@ The workflow builds the site and publishes it to GitHub Pages.
 
 - This repository is maintained as a personal blog, not as a general Jasper2 theme template.
 - Legacy Node/Gulp build tooling has been removed from active use; committed CSS assets in `assets/built/` are used directly.
+- Image optimization workflow notes are documented in `docs/image-optimization-pass2.md`.
 
 ## License
 
