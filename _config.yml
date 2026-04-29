@@ -21,11 +21,9 @@ cover: assets/images/blog-cover.jpg
 logo: assets/images/blog-icon.png
 logo_dark: assets/images/favicon.png
 favicon: assets/images/favicon.png
-production_url: https://heitorcolangelo.dev/
 source_url: https://github.com/heitorcolangelo/heitorcolangelo.github.io
 CNAME: heitorcolangelo.dev
 navigation: true
-twitter: heitorcolangelo
 disqus: false
 disqus_shortname: heitorcolangelo
 google_analytics: UA-69281367-1
@@ -41,10 +39,6 @@ feed:
   path: feed.xml
 safe: false
 lsi: false
-username: heitorcolangelo
-repo: heitorcolangelo
-branch: master
-relative_source: "../heitorcolangelo.dev/"
 destination: _site
 exclude:
 - assets/css
