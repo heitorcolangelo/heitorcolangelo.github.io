@@ -20,7 +20,7 @@
                         {% endfor %}
                     {% endif %}
                     {% if post.lang %}
-                        <span class="post-card-lang">{{ post.lang | upcase }}</span>
+                        <span class="post-card-lang" aria-label="Language: {{ post.lang | escape }}">{{ post.lang | upcase | escape }}</span>
                     {% endif %}
 
                     <h2 class="post-card-title">{{ post.title }}</h2>
