@@ -11,9 +11,15 @@ navigation: true
 class: post-template
 subclass: post
 author: heitor
+lang: pt
+translation_key: espresso-part-3
+slug: android-testing-with-espresso-part-3
+redirect_from:
+- /testes-no-android-com-espresso-parte-3
+- /testes-no-android-com-espresso-parte-3/
 ---
 
-No [post anterior](https://heitorcolangelo.dev/testes-no-android-com-espresso-parte-2) fizemos nosso primeiro teste na tela de Login. Caso queira iniciar a partir deste post, utilize o branch ‘[part\_2](https://github.com/heitorcolangelo/EspressoTests/tree/part_2)’ do projeto.
+No [post anterior](https://heitorcolangelo.dev/pt/android-testing-with-espresso-part-2/) fizemos nosso primeiro teste na tela de Login. Caso queira iniciar a partir deste post, utilize o branch ‘[part\_2](https://github.com/heitorcolangelo/EspressoTests/tree/part_2)’ do projeto.
 
 **Simulando resultados de intents.**
 
@@ -85,4 +91,4 @@ Rode o teste, ele deve passar sem problemas e a MainActivity não será iniciada
 
 Se tiver alguma dúvida, sugestão, ou se encontrou um erro no post, deixe um comentário.
 
-[Ir para Parte 4 — mockando requisições para a API >>](https://heitorcolangelo.dev/testes-no-android-com-espresso-parte-4)
+[Ir para Parte 4 — mockando requisições para a API >>](https://heitorcolangelo.dev/pt/android-testing-with-espresso-part-4/)

@@ -27,7 +27,7 @@ navigation: true
 disqus: false
 disqus_shortname: heitorcolangelo
 google_analytics_ga4: "G-CR3BJJ8FFQ"
-permalink: "/:title"
+permalink: "/:lang/:slug/"
 plugins_dir:
 - _plugins
 plugins:
@@ -35,6 +35,13 @@ plugins:
 - jekyll-feed
 - jekyll-seo-tag
 - jekyll-sitemap
+- jekyll-redirect-from
+defaults:
+- scope:
+    path: ""
+    type: posts
+  values:
+    lang: en
 feed:
   path: feed.xml
 safe: false

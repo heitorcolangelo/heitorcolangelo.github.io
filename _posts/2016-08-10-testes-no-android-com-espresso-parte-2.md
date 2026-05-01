@@ -11,11 +11,17 @@ navigation: true
 class: post-template
 subclass: post
 author: heitor
+lang: pt
+translation_key: espresso-part-2
+slug: android-testing-with-espresso-part-2
+redirect_from:
+- /testes-no-android-com-espresso-parte-2
+- /testes-no-android-com-espresso-parte-2/
 ---
 
 #### Asserções simples e interações com views.
 
-Na [parte 1](https://heitorcolangelo.dev/testes-no-android-com-espresso-parte-1) nós vimos como configurar nosso projeto. Se você quiser começar a partir desta parte, clone o projeto [EspressoTests](https://github.com/heitorcolangelo/EspressoTests) no github e faça um fork da branch ‘part\_1’, que representa o estado do projeto ao final da parte 1.
+Na [parte 1](https://heitorcolangelo.dev/pt/android-testing-with-espresso-part-1/) nós vimos como configurar nosso projeto. Se você quiser começar a partir desta parte, clone o projeto [EspressoTests](https://github.com/heitorcolangelo/EspressoTests) no github e faça um fork da branch ‘part\_1’, que representa o estado do projeto ao final da parte 1.
 
 **Criando o primeiro teste**
 
@@ -226,4 +232,4 @@ Ao final desta etapa, o seu código deve estar parecido com o branch [`part_2`](
 
 Se tiver dúvidas, sugestões ou encontrou alguma informação errada neste post, deixe um comentário abaixo.
 
-[Ir para parte 3  —  testando intents >>](https://heitorcolangelo.dev/testes-no-android-com-espresso-parte-3)
+[Ir para parte 3  —  testando intents >>](https://heitorcolangelo.dev/pt/android-testing-with-espresso-part-3/)

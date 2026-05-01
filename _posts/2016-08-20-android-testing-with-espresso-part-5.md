@@ -11,11 +11,16 @@ navigation: true
 class: post-template
 subclass: post
 author: heitor
+lang: en
+translation_key: espresso-part-5
+redirect_from:
+- /android-testing-with-espresso-part-5
+- /android-testing-with-espresso-part-5/
 ---
 
 > This post was translated from Portuguese using generative AI.
 
-In the [previous post](https://heitorcolangelo.dev/android-testing-with-espresso-part-4), we learned how to mock Android's intents. If you want to start from this post, use the branch '[part_4](https://github.com/heitorcolangelo/EspressoTests/tree/part_4)' of the project.
+In the [previous post](https://heitorcolangelo.dev/en/android-testing-with-espresso-part-4/), we learned how to mock Android's intents. If you want to start from this post, use the branch '[part_4](https://github.com/heitorcolangelo/EspressoTests/tree/part_4)' of the project.
 
 Assertions on the RecyclerView item's layout
 --------------------------------------------
@@ -137,4 +142,4 @@ Run all the tests, they should pass. If something went wrong, go over the previo
 
 Let's move on to testing our last activity, the UserDetailsActivity.
 
-[Go to Part 6 — Custom Matchers and Runtime Permissions>>](https://heitorcolangelo.dev/android-testing-with-espresso-part-6)
+[Go to Part 6 — Custom Matchers and Runtime Permissions>>](https://heitorcolangelo.dev/en/android-testing-with-espresso-part-6/)
