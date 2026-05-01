@@ -11,9 +11,16 @@ navigation: true
 class: post-template
 subclass: post
 author: heitor
+lang: pt
+translation_key: espresso-part-5
+permalink: /pt/:slug/
+slug: android-testing-with-espresso-part-5
+redirect_from:
+- /testes-no-android-com-espresso-parte-5
+- /testes-no-android-com-espresso-parte-5/
 ---
 
-No [post anterior](https://heitorcolangelo.dev/testes-no-android-com-espresso-parte-4) aprendemos como mockar as intents do Android. Caso queira iniciar a partir deste post, utilize o branch ‘[part_4](https://github.com/heitorcolangelo/EspressoTests/tree/part_4)’ do projeto.
+No [post anterior](https://heitorcolangelo.dev/pt/android-testing-with-espresso-part-4/) aprendemos como mockar as intents do Android. Caso queira iniciar a partir deste post, utilize o branch ‘[part_4](https://github.com/heitorcolangelo/EspressoTests/tree/part_4)’ do projeto.
 
 Asserções no layout do item da RecyclerView
 -------------------------------------------
@@ -135,4 +142,4 @@ Execute todos os testes, eles devem passar. Se algo deu errado, retome os passos
 
 Vamos partir para os testes na nossa última activity, a UserDetailsActivity.
 
-[Ir para Parte 6 — Custom Matchers e Runtime Permissions>>](https://heitorcolangelo.dev/testes-no-android-com-espresso-parte-6)
+[Ir para Parte 6 — Custom Matchers e Runtime Permissions>>](https://heitorcolangelo.dev/pt/android-testing-with-espresso-part-6/)

@@ -11,13 +11,19 @@ navigation: true
 class: post-template
 subclass: post
 author: heitor
+lang: en
+translation_key: espresso-part-2
+permalink: /en/:slug/
+redirect_from:
+- /android-testing-with-espresso-part-2
+- /android-testing-with-espresso-part-2/
 ---
 
 > This post was translated from Portuguese using generative AI.
 
 #### Simple assertions and interactions with views.
 
-In [part 1](https://heitorcolangelo.dev/android-testing-with-espresso-part-1) we saw how to configure our project. If you want to start from this part, clone the [EspressoTests](https://github.com/heitorcolangelo/EspressoTests) project on GitHub and fork the 'part\_1' branch, which represents the project state at the end of part 1.
+In [part 1](https://heitorcolangelo.dev/en/android-testing-with-espresso-part-1/) we saw how to configure our project. If you want to start from this part, clone the [EspressoTests](https://github.com/heitorcolangelo/EspressoTests) project on GitHub and fork the 'part\_1' branch, which represents the project state at the end of part 1.
 
 **Creating the first test**
 
@@ -231,4 +237,4 @@ At the end of this step, your code should look like the [`part_2`](https://githu
 
 If you have any questions, suggestions, or found any incorrect information in this post, leave a comment below.
 
-[Go to part 3 — testing intents >>](https://heitorcolangelo.dev/android-testing-with-espresso-part-3)
+[Go to part 3 — testing intents >>](https://heitorcolangelo.dev/en/android-testing-with-espresso-part-3/)

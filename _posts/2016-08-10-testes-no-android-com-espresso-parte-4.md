@@ -11,9 +11,16 @@ navigation: true
 class: post-template
 subclass: post
 author: heitor
+lang: pt
+translation_key: espresso-part-4
+permalink: /pt/:slug/
+slug: android-testing-with-espresso-part-4
+redirect_from:
+- /testes-no-android-com-espresso-parte-4
+- /testes-no-android-com-espresso-parte-4/
 ---
 
-No [post anterior](https://heitorcolangelo.dev/testes-no-android-com-espresso-parte-3) aprendemos como mockar as intents do Android. Caso queira iniciar a partir deste post, utilize o branch ‘part_3’ do projeto.
+No [post anterior](https://heitorcolangelo.dev/pt/android-testing-with-espresso-part-3/) aprendemos como mockar as intents do Android. Caso queira iniciar a partir deste post, utilize o branch ‘part_3’ do projeto.
 
 
 Cenários da MainActivity
@@ -231,4 +238,4 @@ Se tiver alguma dúvida, sugestão, ou se encontrou um erro no post, deixe um co
 
 Ainda precisamos testar se o layout que definimos para o nosso item da recycler view está sendo apresentado corretamente. Também precisamos verificar se ao clicar em um item, enviamos as informações corretas para a activity de detalhes. Estes serão nossos próximos cenários de teste.
 
-[Ir para Parte 5 — asserções e interações na recycler view >>](https://heitorcolangelo.dev/testes-no-android-com-espresso-parte-5)
+[Ir para Parte 5 — asserções e interações na recycler view >>](https://heitorcolangelo.dev/pt/android-testing-with-espresso-part-5/)

@@ -35,6 +35,13 @@ plugins:
 - jekyll-feed
 - jekyll-seo-tag
 - jekyll-sitemap
+- jekyll-redirect-from
+defaults:
+- scope:
+    path: ""
+    type: posts
+  values:
+    lang: en
 feed:
   path: feed.xml
 safe: false

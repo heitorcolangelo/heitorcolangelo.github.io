@@ -11,9 +11,16 @@ navigation: true
 class: post-template
 subclass: post
 author: heitor
+lang: pt
+translation_key: espresso-part-7
+permalink: /pt/:slug/
+slug: android-testing-with-espresso-part-7
+redirect_from:
+- /testes-no-android-com-espresso-parte-7
+- /testes-no-android-com-espresso-parte-7/
 ---
 
-No [post anterior](https://heitorcolangelo.dev/testes-no-android-com-espresso-parte-6) aprendemos como criar _custom matchers_ e como tratar _run time permissions_ com UiAutomator. Nesta última parte vou focar mais em algumas dicas que acho importante, também vou falar sobre TestButler e Robots Pattern. Para acompanhar esta parte, utilize o branch ‘[part\_7](https://github.com/heitorcolangelo/EspressoTests/tree/part_7)’ do projeto.
+No [post anterior](https://heitorcolangelo.dev/pt/android-testing-with-espresso-part-6/) aprendemos como criar _custom matchers_ e como tratar _run time permissions_ com UiAutomator. Nesta última parte vou focar mais em algumas dicas que acho importante, também vou falar sobre TestButler e Robots Pattern. Para acompanhar esta parte, utilize o branch ‘[part\_7](https://github.com/heitorcolangelo/EspressoTests/tree/part_7)’ do projeto.
 
 Animações de Loading x AlertDialogs
 -----------------------------------

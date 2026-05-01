@@ -11,13 +11,19 @@ navigation: true
 class: post-template
 subclass: post
 author: heitor
+lang: en
+translation_key: espresso-part-3
+permalink: /en/:slug/
+redirect_from:
+- /android-testing-with-espresso-part-3
+- /android-testing-with-espresso-part-3/
 ---
 
 > This post was translated from Portuguese using generative AI.
 
 ### Simulating Intent Results
 
-In the [previous post](https://heitorcolangelo.dev/android-testing-with-espresso-part-2), we performed our first test on the Login screen. If you want to start from this post, use the 'part_2' branch of the project.
+In the [previous post](https://heitorcolangelo.dev/en/android-testing-with-espresso-part-2/), we performed our first test on the Login screen. If you want to start from this post, use the 'part_2' branch of the project.
 
 **Simulating Intent Results**
 
@@ -129,4 +135,4 @@ Great, now that we've covered our first screen with tests, we can move on. Befor
 
 If you have any questions, suggestions, or if you found an error in the post, leave a comment.
 
-[Go to Part 4 — mocking API requests >>](https://heitorcolangelo.dev/android-testing-with-espresso-part-4)
+[Go to Part 4 — mocking API requests >>](https://heitorcolangelo.dev/en/android-testing-with-espresso-part-4/)

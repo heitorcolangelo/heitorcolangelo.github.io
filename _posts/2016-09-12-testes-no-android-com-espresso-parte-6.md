@@ -11,9 +11,16 @@ navigation: true
 class: post-template
 subclass: post
 author: heitor
+lang: pt
+translation_key: espresso-part-6
+permalink: /pt/:slug/
+slug: android-testing-with-espresso-part-6
+redirect_from:
+- /testes-no-android-com-espresso-parte-6
+- /testes-no-android-com-espresso-parte-6/
 ---
 
-No [post anterior](https://heitorcolangelo.dev/testes-no-android-com-espresso-parte-5) aprendemos como fazer asserções e interações em uma _recyclerview_. Caso queira iniciar a partir deste post, utilize o branch ‘part\_5’ do projeto.
+No [post anterior](https://heitorcolangelo.dev/pt/android-testing-with-espresso-part-5/) aprendemos como fazer asserções e interações em uma _recyclerview_. Caso queira iniciar a partir deste post, utilize o branch ‘part\_5’ do projeto.
 
 Nesta parte do tutorial, vamos ver como fazer um _matcher_ customizado e aprender a tratar as runtime permissions. Para isso, foi necessário fazer uma alteração no projeto inicial. Confira esta alteração na classe _ImageAndTextView.java(linha 47)_ e na classe _UserDetailsActivity_. Entenda bem esta alteração antes de prosseguir.
 
@@ -266,4 +273,4 @@ Existem outros cenários a serem testados nesta tela, mas o conhecimento necess�
 
 Ao final desta etapa, seu código deve estar parecido com o da branch ‘[part\_6](https://github.com/heitorcolangelo/EspressoTests/tree/part_6)’.
 
-[Ir para parte 7 — Dicas finais, TestButler e Robots Pattern>>.](https://heitorcolangelo.dev/testes-no-android-com-espresso-parte-7)
+[Ir para parte 7 — Dicas finais, TestButler e Robots Pattern>>.](https://heitorcolangelo.dev/pt/android-testing-with-espresso-part-7/)

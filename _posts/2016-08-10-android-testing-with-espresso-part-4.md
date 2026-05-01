@@ -11,11 +11,17 @@ navigation: true
 class: post-template
 subclass: post
 author: heitor
+lang: en
+translation_key: espresso-part-4
+permalink: /en/:slug/
+redirect_from:
+- /android-testing-with-espresso-part-4
+- /android-testing-with-espresso-part-4/
 ---
 
 > This post was translated from Portuguese using generative AI.
 
-In the [previous post](https://heitorcolangelo.dev/android-testing-with-espresso-part-3), we learned how to mock Android intents. If you want to start from this post, use the 'part_3' branch of the project.
+In the [previous post](https://heitorcolangelo.dev/en/android-testing-with-espresso-part-3/), we learned how to mock Android intents. If you want to start from this post, use the 'part_3' branch of the project.
 
 Scenarios for MainActivity
 ------------------------
@@ -232,4 +238,4 @@ If you have any questions, suggestions, or found an error in the post, leave a c
 
 We still need to test if the layout we defined for our item in the recycler view is being displayed correctly. We also need to check if by clicking on an item, we are sending the correct information to the details activity. These will be our next test scenarios.
 
-[Go to Part 5 — assertions and interactions in the recycler view >>](https://heitorcolangelo.dev/android-testing-with-espresso-part-5)
+[Go to Part 5 — assertions and interactions in the recycler view >>](https://heitorcolangelo.dev/en/android-testing-with-espresso-part-5/)
