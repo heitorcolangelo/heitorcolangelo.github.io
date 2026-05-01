@@ -1,25 +1,25 @@
 {% if page.translation_key and page.lang %}
   {% assign pt_post = site.posts | where: "translation_key", page.translation_key | where: "lang", "pt" | first %}
   {% assign en_post = site.posts | where: "translation_key", page.translation_key | where: "lang", "en" | first %}
-  <div class="post-lang-switcher" aria-label="Post language switcher">
+  <nav class="post-lang-switcher" aria-label="Post language switcher">
     {% if pt_post %}
       {% if page.lang == "pt" %}
-        <span class="lang-active">PT</span>
+        <span class="lang-active" aria-current="page">PT</span>
       {% else %}
         <a href="{{ pt_post.url | relative_url }}">PT</a>
       {% endif %}
     {% else %}
-      <span class="lang-disabled" title="No Portuguese version">PT</span>
+      <span class="lang-disabled" aria-disabled="true" aria-label="Portuguese version unavailable">PT</span>
     {% endif %}
     <span class="lang-separator">|</span>
     {% if en_post %}
       {% if page.lang == "en" %}
-        <span class="lang-active">EN</span>
+        <span class="lang-active" aria-current="page">EN</span>
       {% else %}
         <a href="{{ en_post.url | relative_url }}">EN</a>
       {% endif %}
     {% else %}
-      <span class="lang-disabled" title="No English version">EN</span>
+      <span class="lang-disabled" aria-disabled="true" aria-label="English version unavailable">EN</span>
     {% endif %}
-  </div>
+  </nav>
 {% endif %}
