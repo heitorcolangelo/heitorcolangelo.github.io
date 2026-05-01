@@ -13,6 +13,7 @@ subclass: post
 author: heitor
 lang: pt
 translation_key: espresso-part-6
+permalink: /pt/:slug/
 slug: android-testing-with-espresso-part-6
 redirect_from:
 - /testes-no-android-com-espresso-parte-6

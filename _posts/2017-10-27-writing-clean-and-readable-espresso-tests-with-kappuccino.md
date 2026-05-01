@@ -13,6 +13,7 @@ subclass: post
 author: heitor
 lang: en
 translation_key: kappuccino
+permalink: /en/:slug/
 redirect_from:
 - /writing-clean-and-readable-espresso-tests-with-kappuccino
 - /writing-clean-and-readable-espresso-tests-with-kappuccino/

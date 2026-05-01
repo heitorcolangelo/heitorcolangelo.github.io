@@ -12,6 +12,7 @@ subclass: post
 author: heitor
 lang: en
 translation_key: mobile-e2e-testing
+permalink: /en/:slug/
 redirect_from:
 - /our-journey-into-mobile-e2e-testing
 - /our-journey-into-mobile-e2e-testing/

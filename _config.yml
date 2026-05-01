@@ -42,7 +42,6 @@ defaults:
     type: posts
   values:
     lang: en
-    permalink: "/:lang/:slug/"
 feed:
   path: feed.xml
 safe: false
