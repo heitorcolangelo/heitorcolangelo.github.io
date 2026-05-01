@@ -25,13 +25,18 @@ module Jekyll
 
     def paginate(site, type, posts)
       pages = Jekyll::Paginate::Pager.calculate_pages(posts[1], site.config['paginate'].to_i)
+      tag_slug = posts[0].slugify
+      canonical_base_path = "/tag/" + tag_slug
+      legacy_base_path = "/tag-" + tag_slug
       (1..pages).each do |num_page|
         pager = Jekyll::Paginate::Pager.new(site, num_page, posts[1], pages)
-        path = "/tag/" + posts[0].slugify
+        path = canonical_base_path
+        legacy_path = legacy_base_path
         if num_page > 1
           path = path + "/page#{num_page}"
+          legacy_path = legacy_path + "/page#{num_page}"
         end
-        newpage = GroupSubPageTags.new(site, site.source, path, type, posts[0])
+        newpage = GroupSubPageTags.new(site, site.source, path, type, posts[0], legacy_path)
         newpage.pager = pager
         site.pages << newpage
 
@@ -40,7 +45,7 @@ module Jekyll
   end
 
   class GroupSubPageTags < Page
-    def initialize(site, base, dir, type, val)
+    def initialize(site, base, dir, type, val, legacy_path)
       @site = site
       @base = base
       @dir = dir
@@ -50,6 +55,7 @@ module Jekyll
       self.read_yaml(File.join(base, '_layouts'), "tag.html")
       self.data["grouptype"] = type
       self.data[type] = val
+      self.data["redirect_from"] = [legacy_path, legacy_path + "/"]
     end
   end
 
