@@ -5,8 +5,16 @@
     <link rel="canonical" href="{{ page_url }}" />
     {% if page.translation_key %}
         {% assign translation_posts = site.posts | where: "translation_key", page.translation_key %}
+        {% assign emitted_hreflangs = "|" %}
         {% for translation_post in translation_posts %}
-            <link rel="alternate" hreflang="{{ translation_post.lang }}" href="{{ translation_post.url | absolute_url }}" />
+            {% assign translation_lang = translation_post.lang | default: "" | strip | replace: "_", "-" | downcase %}
+            {% capture translation_lang_key %}|{{ translation_lang }}|{% endcapture %}
+            {% if translation_lang != "" %}
+            {% unless emitted_hreflangs contains translation_lang_key %}
+                <link rel="alternate" hreflang="{{ translation_lang }}" href="{{ translation_post.url | absolute_url }}" />
+                {% assign emitted_hreflangs = emitted_hreflangs | append: translation_lang | append: "|" %}
+            {% endunless %}
+            {% endif %}
         {% endfor %}
     {% endif %}
     <meta name="referrer" content="no-referrer-when-downgrade" />

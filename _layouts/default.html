@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="{{ page.lang | default: site.language | default: 'en' }}">
+{% assign document_lang = page.lang | default: site.language | default: 'en' | replace: "_", "-" | downcase %}
+<html lang="{{ document_lang }}">
 <head>
 
     <!-- Document Settings -->
