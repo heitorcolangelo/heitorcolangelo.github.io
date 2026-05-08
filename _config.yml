@@ -15,8 +15,8 @@ language: en-GB
 words_per_minute: 200
 baseurl: ""
 url: https://heitorcolangelo.dev
-description: Code chaos, travel tales, and guitar antics. This is a wild ride where
-  bugs, snapshots, and wrong chords unite for a comically charming experience!
+description: Practical software engineering lessons on architecture, testing,
+  and mobile development from real projects.
 cover: assets/images/blog-cover.jpg
 logo: assets/images/blog-icon.png
 logo_dark: assets/images/favicon.png
