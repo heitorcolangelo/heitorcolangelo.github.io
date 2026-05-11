@@ -1,13 +1,5 @@
-{% assign normalized_page_path = page.url | default: "/" %}
-{% if normalized_page_path != "/" and normalized_page_path != "" %}
-    {% assign normalized_path_size = normalized_page_path | size %}
-    {% assign normalized_path_last_char = normalized_page_path | slice: -1, 1 %}
-    {% if normalized_path_last_char == "/" %}
-        {% assign normalized_path_end = normalized_path_size | minus: 1 %}
-        {% assign normalized_page_path = normalized_page_path | slice: 0, normalized_path_end %}
-    {% endif %}
-{% endif %}
-{% assign canonical_url = normalized_page_path | absolute_url %}
+{% assign canonical_path = page.url | default: "/" %}
+{% assign canonical_url = canonical_path | absolute_url %}
 {% assign social_image = page.cover | default: site.cover %}
 <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}" />
     <link rel="shortcut icon" href="{{ site.favicon | absolute_url }}" type="image/png" />
