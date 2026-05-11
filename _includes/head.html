@@ -1,8 +1,20 @@
-{% assign page_url = page.url | absolute_url %}
+{% assign normalized_page_path = page.url | default: "/" %}
+{% if normalized_page_path != "/" and normalized_page_path != "" %}
+    {% assign normalized_path_size = normalized_page_path | size %}
+    {% assign normalized_path_last_char = normalized_page_path | slice: -1, 1 %}
+    {% if normalized_path_last_char == "/" %}
+        {% assign normalized_path_end = normalized_path_size | minus: 1 %}
+        {% assign normalized_page_path = normalized_page_path | slice: 0, normalized_path_end %}
+    {% endif %}
+{% endif %}
+{% assign canonical_url = normalized_page_path | absolute_url %}
 {% assign social_image = page.cover | default: site.cover %}
 <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}" />
     <link rel="shortcut icon" href="{{ site.favicon | absolute_url }}" type="image/png" />
-    <link rel="canonical" href="{{ page_url }}" />
+    <link rel="canonical" href="{{ canonical_url }}" />
+    {% if page.current == 'tag' or page.class == 'tag-template' %}
+    <meta name="robots" content="noindex,follow" />
+    {% endif %}
     {% if page.translation_key %}
         {% assign translation_posts = site.posts | where: "translation_key", page.translation_key %}
         {% assign emitted_hreflangs = "|" %}
@@ -26,7 +38,7 @@
     <meta property="og:type" content="{% if page.current == 'post' %}article{% else %}website{% endif %}" />
     <meta property="og:title" content="{% if title %}{{ title }}{% elsif page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" />
     <meta property="og:description" content="{% if excerpt %}{{ excerpt }}{% elsif page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}" />
-    <meta property="og:url" content="{{ page_url }}" />
+    <meta property="og:url" content="{{ canonical_url }}" />
     <meta property="og:image" content="{{ social_image | absolute_url }}" />
     {% if site.facebook %}<meta property="article:publisher" content="https://www.facebook.com/{{ site.facebook }}" />{% endif %}{% if excerpt and site.facebook %}
     <meta property="article:author" content="https://www.facebook.com/{{ site.facebook }}" />
@@ -36,7 +48,7 @@
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="{% if title %}{{ title }}{% elsif page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" />
     <meta name="twitter:description" content="{% if excerpt %}{{ excerpt }}{% elsif page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}" />
-    <meta name="twitter:url" content="{{ page_url }}" />
+    <meta name="twitter:url" content="{{ canonical_url }}" />
     <meta name="twitter:image" content="{{ social_image | absolute_url }}" />
     <meta name="twitter:label1" content="Written by" />
     <meta name="twitter:data1" content="{{ site.title }}" />{% if page.tags.size > 0 %}
@@ -57,7 +69,7 @@
         "name": "{{ site.title }}",
         "logo": "{{ site.logo | absolute_url }}"
     },
-    "url": "{{ page_url }}",
+    "url": "{{ canonical_url }}",
     "image": {
         "@type": "ImageObject",
         "url": "{{ social_image | absolute_url }}",
@@ -66,7 +78,7 @@
     },
     "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "{{ page_url }}"
+        "@id": "{{ canonical_url }}"
     },
     "description": "{% if excerpt %}{{ excerpt }}{% elsif page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}"
 }
