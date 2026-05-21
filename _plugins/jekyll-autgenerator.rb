@@ -56,6 +56,8 @@ module Jekyll
       self.read_yaml(File.join(base, '_layouts'), "author.html")
       self.data["grouptype"] = type
       self.data[type] = val
+      author_data = site.data['authors'][val]
+      self.data["title"] = author_data ? author_data['name'] : val.split('-').map(&:capitalize).join(' ')
     end
   end
 

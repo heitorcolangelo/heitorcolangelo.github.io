@@ -55,6 +55,7 @@ module Jekyll
       self.read_yaml(File.join(base, '_layouts'), "tag.html")
       self.data["grouptype"] = type
       self.data[type] = val
+      self.data["title"] = val.split('-').map(&:capitalize).join(' ')
       self.data["redirect_from"] = [legacy_path, legacy_path + "/"]
     end
   end
