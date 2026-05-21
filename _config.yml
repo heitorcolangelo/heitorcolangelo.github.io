@@ -59,9 +59,7 @@ exclude:
 - LICENSE
 - package.json
 - package-lock.json
-- Rakefile
 - README.md
-- script.py
 - changelog.md
 - "*.Rmd"
 - ".git*"
