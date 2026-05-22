@@ -10,7 +10,23 @@ navigation: true
 into the {body} of the default.hbs template -->
 
 <!-- The big featured header, it uses blog cover image as a BG if available -->
-<header class="site-header outer {% if page.cover or site.cover %}" style="background-image:  url({% if page.cover %}{{ page.cover | relative_url }}{% elsif site.cover %}{{ site.cover | relative_url }}{% endif %}) {% else %}no-cover{% endif %}">
+{% if page.cover or site.cover %}
+    {% if page.cover %}
+        {% assign header_cover = page.cover %}
+    {% else %}
+        {% assign header_cover = site.cover %}
+    {% endif %}
+    {% assign cover_ext = header_cover | split: '.' | last | downcase %}
+    {% if cover_ext == 'png' %}
+        {% assign cover_mime = 'image/png' %}
+    {% elsif cover_ext == 'webp' %}
+        {% assign cover_mime = 'image/webp' %}
+    {% else %}
+        {% assign cover_mime = 'image/jpeg' %}
+    {% endif %}
+    {% assign cover_base = header_cover | replace: '.jpg', '' | replace: '.png', '' | replace: '.jpeg', '' | replace: '.webp', '' %}
+{% endif %}
+<header class="site-header outer {% if page.cover or site.cover %}" style="background-image: image-set(url('{{ cover_base | append: '.webp' | relative_url }}') type('image/webp'), url('{{ header_cover | relative_url }}') type('{{ cover_mime }}')); {% else %}no-cover{% endif %}">
     <div class="inner">
         <div class="site-header-content">
             <h1 class="site-title">

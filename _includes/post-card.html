@@ -3,8 +3,17 @@
 {% for post in paginator.posts %}
     <article class="post-card {{ page.class }}{% unless post.cover %} no-image{% endunless %}">
         {% if post.cover %}
+            {% assign cover_ext = post.cover | split: '.' | last | downcase %}
+            {% if cover_ext == 'png' %}
+                {% assign cover_mime = 'image/png' %}
+            {% elsif cover_ext == 'webp' %}
+                {% assign cover_mime = 'image/webp' %}
+            {% else %}
+                {% assign cover_mime = 'image/jpeg' %}
+            {% endif %}
+            {% assign cover_base = post.cover | replace: '.jpg', '' | replace: '.png', '' | replace: '.jpeg', '' | replace: '.webp', '' %}
             <a class="post-card-image-link" href="{{ post.url | relative_url }}" aria-label="Read {{ post.title }}">
-                <div class="post-card-image" style="background-image: url({{ post.cover | relative_url }})"></div>
+                <div class="post-card-image" style="background-image: image-set(url('{{ cover_base | append: '.webp' | relative_url }}') type('image/webp'), url('{{ post.cover | relative_url }}') type('{{ cover_mime }}'));"></div>
             </a>
         {% endif %}
         <div class="post-card-content">

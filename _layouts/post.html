@@ -43,7 +43,16 @@ into the {body} of the default.hbs template -->
             </header>
 
             {% if page.cover %}
-            <figure class="post-full-image" style="background-image: url({{ page.cover | relative_url }})">
+            {% assign cover_ext = page.cover | split: '.' | last | downcase %}
+            {% if cover_ext == 'png' %}
+                {% assign cover_mime = 'image/png' %}
+            {% elsif cover_ext == 'webp' %}
+                {% assign cover_mime = 'image/webp' %}
+            {% else %}
+                {% assign cover_mime = 'image/jpeg' %}
+            {% endif %}
+            {% assign cover_base = page.cover | replace: '.jpg', '' | replace: '.png', '' | replace: '.jpeg', '' | replace: '.webp', '' %}
+            <figure class="post-full-image" style="background-image: image-set(url('{{ cover_base | append: '.webp' | relative_url }}') type('image/webp'), url('{{ page.cover | relative_url }}') type('{{ cover_mime }}'));">
             </figure>
             {% endif %}
 
