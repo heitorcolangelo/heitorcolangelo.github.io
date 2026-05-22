@@ -1,6 +1,6 @@
 ---
 title: Testes no Android com Espresso — parte 6
-date: 2016-09-12 00:00:00 Z
+date: 2016-09-12 00:00:00.000000000 Z
 tags:
 - software-testing
 - android
@@ -13,11 +13,13 @@ subclass: post
 author: heitor
 lang: pt
 translation_key: espresso-part-6
-permalink: /pt/:slug/
+permalink: "/pt/:slug/"
 slug: android-testing-with-espresso-part-6
 redirect_from:
-- /testes-no-android-com-espresso-parte-6
-- /testes-no-android-com-espresso-parte-6/
+- "/testes-no-android-com-espresso-parte-6"
+- "/testes-no-android-com-espresso-parte-6/"
+- "/pt/android-testing-with-espresso-part-6"
+- "/pt/android-testing-with-espresso-part-6/"
 ---
 
 No [post anterior](https://heitorcolangelo.dev/pt/android-testing-with-espresso-part-5/) aprendemos como fazer asserções e interações em uma _recyclerview_. Caso queira iniciar a partir deste post, utilize o branch ‘part\_5’ do projeto.

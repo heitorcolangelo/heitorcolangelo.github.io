@@ -1,6 +1,6 @@
 ---
 title: Testes no Android com Espresso — parte 7
-date: 2016-10-10 00:00:00 Z
+date: 2016-10-10 00:00:00.000000000 Z
 tags:
 - software-testing
 - android
@@ -13,11 +13,13 @@ subclass: post
 author: heitor
 lang: pt
 translation_key: espresso-part-7
-permalink: /pt/:slug/
+permalink: "/pt/:slug/"
 slug: android-testing-with-espresso-part-7
 redirect_from:
-- /testes-no-android-com-espresso-parte-7
-- /testes-no-android-com-espresso-parte-7/
+- "/testes-no-android-com-espresso-parte-7"
+- "/testes-no-android-com-espresso-parte-7/"
+- "/pt/android-testing-with-espresso-part-7"
+- "/pt/android-testing-with-espresso-part-7/"
 ---
 
 No [post anterior](https://heitorcolangelo.dev/pt/android-testing-with-espresso-part-6/) aprendemos como criar _custom matchers_ e como tratar _run time permissions_ com UiAutomator. Nesta última parte vou focar mais em algumas dicas que acho importante, também vou falar sobre TestButler e Robots Pattern. Para acompanhar esta parte, utilize o branch ‘[part\_7](https://github.com/heitorcolangelo/EspressoTests/tree/part_7)’ do projeto.

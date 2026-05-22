@@ -1,6 +1,6 @@
 ---
 title: Testes no Android com Espresso — parte 1
-date: 2016-08-10 00:00:00 Z
+date: 2016-08-10 00:00:00.000000000 Z
 tags:
 - software-testing
 - android
@@ -13,11 +13,13 @@ subclass: post
 author: heitor
 lang: pt
 translation_key: espresso-part-1
-permalink: /pt/:slug/
+permalink: "/pt/:slug/"
 slug: android-testing-with-espresso-part-1
 redirect_from:
-- /testes-no-android-com-espresso-parte-1
-- /testes-no-android-com-espresso-parte-1/
+- "/testes-no-android-com-espresso-parte-1"
+- "/testes-no-android-com-espresso-parte-1/"
+- "/pt/android-testing-with-espresso-part-1"
+- "/pt/android-testing-with-espresso-part-1/"
 ---
 
 Nesta série de posts, vou mostrar como realizar testes eficientes no seu app Android utilizando o [Espresso](https://google.github.io/android-testing-support-library/docs/espresso/). Além disso, conforme formos evoluindo, vou dando dicas das principais dificuldades que você provavelmente irá encontrar pelo caminho, e como resolvê-las.

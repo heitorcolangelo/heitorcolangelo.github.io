@@ -1,8 +1,8 @@
 ---
 title: Our journey into mobile E2E testing
-date: 2024-08-30 00:00:00 Z
+date: 2024-08-30 00:00:00.000000000 Z
 tags:
-  - software-testing
+- software-testing
 layout: post
 current: post
 cover: assets/images/e2e-testing.webp
@@ -12,10 +12,12 @@ subclass: post
 author: heitor
 lang: en
 translation_key: mobile-e2e-testing
-permalink: /en/:slug/
+permalink: "/en/:slug/"
 redirect_from:
-- /our-journey-into-mobile-e2e-testing
-- /our-journey-into-mobile-e2e-testing/
+- "/our-journey-into-mobile-e2e-testing"
+- "/our-journey-into-mobile-e2e-testing/"
+- "/en/our-journey-into-mobile-e2e-testing"
+- "/en/our-journey-into-mobile-e2e-testing/"
 ---
 
 At Fresco, we aim to meet high-quality standards while keeping our workflow efficient. Early on, we used automated

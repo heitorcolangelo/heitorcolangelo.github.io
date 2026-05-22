@@ -1,6 +1,6 @@
 ---
 title: Android testing with espresso — part 7
-date: 2016-10-10 00:00:00 Z
+date: 2016-10-10 00:00:00.000000000 Z
 tags:
 - software-testing
 - android
@@ -13,10 +13,12 @@ subclass: post
 author: heitor
 lang: en
 translation_key: espresso-part-7
-permalink: /en/:slug/
+permalink: "/en/:slug/"
 redirect_from:
-- /android-testing-with-espresso-part-7
-- /android-testing-with-espresso-part-7/
+- "/android-testing-with-espresso-part-7"
+- "/android-testing-with-espresso-part-7/"
+- "/en/android-testing-with-espresso-part-7"
+- "/en/android-testing-with-espresso-part-7/"
 ---
 
 > This post was translated from Portuguese using generative AI.

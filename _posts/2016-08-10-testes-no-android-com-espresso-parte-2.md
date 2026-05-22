@@ -1,6 +1,6 @@
 ---
 title: Testes no Android com Espresso — parte 2
-date: 2016-08-10 00:00:00 Z
+date: 2016-08-10 00:00:00.000000000 Z
 tags:
 - software-testing
 - android
@@ -13,11 +13,13 @@ subclass: post
 author: heitor
 lang: pt
 translation_key: espresso-part-2
-permalink: /pt/:slug/
+permalink: "/pt/:slug/"
 slug: android-testing-with-espresso-part-2
 redirect_from:
-- /testes-no-android-com-espresso-parte-2
-- /testes-no-android-com-espresso-parte-2/
+- "/testes-no-android-com-espresso-parte-2"
+- "/testes-no-android-com-espresso-parte-2/"
+- "/pt/android-testing-with-espresso-part-2"
+- "/pt/android-testing-with-espresso-part-2/"
 ---
 
 #### Asserções simples e interações com views.
