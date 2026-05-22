@@ -14,11 +14,17 @@
             {% capture translation_lang_key %}|{{ translation_lang }}|{% endcapture %}
             {% if translation_lang != "" %}
             {% unless emitted_hreflangs contains translation_lang_key %}
-                <link rel="alternate" hreflang="{{ translation_lang }}" href="{{ translation_post.url | absolute_url }}" />
+                {% include slashless_path.html url=translation_post.url %}
+                <link rel="alternate" hreflang="{{ translation_lang }}" href="{{ slashless_path | absolute_url }}" />
                 {% assign emitted_hreflangs = emitted_hreflangs | append: translation_lang | append: "|" %}
             {% endunless %}
             {% endif %}
         {% endfor %}
+        {% assign default_post = site.posts | where: "translation_key", page.translation_key | where: "lang", "en" | first %}
+        {% if default_post %}
+            {% include slashless_path.html url=default_post.url %}
+            <link rel="alternate" hreflang="x-default" href="{{ slashless_path | absolute_url }}" />
+        {% endif %}
     {% endif %}
     <meta name="referrer" content="no-referrer-when-downgrade" />
 
