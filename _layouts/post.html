@@ -30,10 +30,11 @@ into the {body} of the default.hbs template -->
                     {% if page.tags.size > 0 %}
                         <span class="date-divider">/</span>
                         {% for tag in page.tags %}
+                            {% capture tag_slug %}{{ tag | slugify: "latin" }}{% endcapture %}
                             {% if forloop.index == page.tags.size %}
-                               <a href='{{ '/tag/' | append: (tag | slugify: "latin") | relative_url }}'>{{ tag | upcase }}</a>
+                               <a href="{{ '/tag/' | append: tag_slug | relative_url }}">{{ tag | upcase }}</a>
                             {% else %}
-                               <a href='{{ '/tag/' | append: (tag | slugify: "latin") | relative_url }}'>{{ tag | upcase }}</a>,
+                               <a href="{{ '/tag/' | append: tag_slug | relative_url }}">{{ tag | upcase }}</a>,
                             {% endif %}
                         {% endfor %}
                     {% endif %}
@@ -130,6 +131,7 @@ into the {body} of the default.hbs template -->
         <div class="read-next-feed">
             {% if page.tags.size > 0 %}
                 {% assign primary = page.tags | first %}
+                {% capture primary_tag_slug %}{{ primary | slugify: "latin" }}{% endcapture %}
                 {% assign related_posts = 0 %}
                 {% for post in site.posts %}
                   {% if post.tags.size > 0 %}
@@ -150,7 +152,7 @@ into the {body} of the default.hbs template -->
                         <header class="read-next-card-header">
                             <small class="read-next-card-header-sitetitle">&mdash; {{ site.title }} &mdash;</small>
                             {% if primary %}
-                                <h2 class="read-next-card-header-title"><a href="{{ '/tag/' | append: (primary | slugify: "latin") | relative_url }}">{{ primary | capitalize }}</a></h2>
+                                <h2 class="read-next-card-header-title"><a href="{{ '/tag/' | append: primary_tag_slug | relative_url }}">{{ primary | capitalize }}</a></h2>
                             {% endif %}
                         </header>
                         <div class="read-next-divider">{% include infinity.html %}</div>
@@ -170,7 +172,7 @@ into the {body} of the default.hbs template -->
                             </ul>
                         </div>
                         <footer class="read-next-card-footer">
-                            <a href="{{ '/tag/' | append: (primary | slugify: "latin") | relative_url }}">
+                            <a href="{{ '/tag/' | append: primary_tag_slug | relative_url }}">
                                 {% if related_posts > 1 %}
                                     See all {{ related_posts | minus: 1 }} posts  →
                                 {% elsif related_posts == 1 %}
