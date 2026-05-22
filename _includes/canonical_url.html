@@ -6,5 +6,7 @@
     {% assign canonical_path_end = canonical_path_size | minus: 1 %}
     {% assign canonical_path = canonical_path | slice: 0, canonical_path_end %}
   {% endif %}
+  {% assign canonical_url = canonical_path | absolute_url %}
+{% else %}
+  {% assign canonical_url = site.url %}
 {% endif %}
-{% assign canonical_url = canonical_path | absolute_url %}
