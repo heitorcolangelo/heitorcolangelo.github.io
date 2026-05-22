@@ -16,9 +16,6 @@
     <link rel="stylesheet" type="text/css" href="{{ '/assets/built/screen.css' | relative_url }}" />
     <link rel="stylesheet" type="text/css" href="{{ '/assets/built/screen.edited.css' | relative_url }}" />
     <link rel="stylesheet" type="text/css" href="{{ '/assets/built/syntax.css' | relative_url }}" />
-    <!-- highlight.js -->
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
-    <style>.hljs { background: none; }</style>
 
     <!--[if IE]>
         <style>
@@ -61,12 +58,10 @@
             <div class="site-footer-content inner">
                 <section class="copyright"><a href="{{ '/' | relative_url }}">{{ site.title }}</a> &copy; {{  site.time | date: '%Y' }}</section>
                 <section class="poweredby">Proudly published with <a href="https://jekyllrb.com/">Jekyll</a> &
-                    <a href="https://pages.github.com/" target="_blank" rel="noopener">GitHub Pages</a> using
-                    <a href="https://github.com/jekyllt/jasper2" target="_blank" rel="noopener">Jasper2</a></section>
+                    <a href="https://pages.github.com/" target="_blank" rel="noopener">GitHub Pages</a></section>
                 <nav class="site-footer-nav">
                     <a href="{{ '/' | relative_url }}">Latest Posts</a>
-                    {% if site.facebook %}<a href="https://facebook.com/{{ site.facebook }}" target="_blank" rel="noopener">Facebook</a>{% endif %}
-                    <a href="https://ghost.org" target="_blank" rel="noopener">Ghost</a>
+                    <a href="{{ '/about/' | relative_url }}">About</a>
                 </nav>
             </div>
         </footer>
@@ -95,13 +90,6 @@
         crossorigin="anonymous">
     </script>
     <script type="text/javascript" src="{{ '/assets/js/jquery.fitvids.js' | relative_url }}"></script>
-    <!-- highlight.js -->
-    <script>$(document).ready(function() {
-      $('pre code').each(function(i, block) {
-        hljs.highlightBlock(block);
-      });
-    });</script>
-
 
     <!-- Paginator increased to "infinit" in _config.yml -->
     <!-- if paginator.posts  -->

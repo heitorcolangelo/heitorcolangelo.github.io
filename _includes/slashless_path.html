@@ -1,0 +1,9 @@
+{% assign slashless_path = include.url | default: "/" %}
+{% if slashless_path != "/" and slashless_path != "" %}
+  {% assign slashless_path_size = slashless_path | size %}
+  {% assign slashless_path_last = slashless_path | slice: -1, 1 %}
+  {% if slashless_path_last == "/" %}
+    {% assign slashless_path_end = slashless_path_size | minus: 1 %}
+    {% assign slashless_path = slashless_path | slice: 0, slashless_path_end %}
+  {% endif %}
+{% endif %}

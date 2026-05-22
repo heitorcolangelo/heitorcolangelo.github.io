@@ -1,6 +1,6 @@
 ---
 title: Writing clean and readable Espresso tests with Kappuccino
-date: 2017-10-27 00:00:00 Z
+date: 2017-10-27 00:00:00.000000000 Z
 tags:
 - software-testing
 - espresso
@@ -13,10 +13,12 @@ subclass: post
 author: heitor
 lang: en
 translation_key: kappuccino
-permalink: /en/:slug/
+permalink: "/en/:slug/"
 redirect_from:
-- /writing-clean-and-readable-espresso-tests-with-kappuccino
-- /writing-clean-and-readable-espresso-tests-with-kappuccino/
+- "/writing-clean-and-readable-espresso-tests-with-kappuccino"
+- "/writing-clean-and-readable-espresso-tests-with-kappuccino/"
+- "/en/writing-clean-and-readable-espresso-tests-with-kappuccino"
+- "/en/writing-clean-and-readable-espresso-tests-with-kappuccino/"
 ---
 
 # Writing clean and readable Espresso tests with Kappuccino

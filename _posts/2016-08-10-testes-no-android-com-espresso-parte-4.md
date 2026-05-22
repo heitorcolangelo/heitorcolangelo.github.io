@@ -1,6 +1,6 @@
 ---
 title: Testes no Android com Espresso — parte 4
-date: 2016-08-10 00:00:00 Z
+date: 2016-08-10 00:00:00.000000000 Z
 tags:
 - software-testing
 - android
@@ -13,11 +13,13 @@ subclass: post
 author: heitor
 lang: pt
 translation_key: espresso-part-4
-permalink: /pt/:slug/
+permalink: "/pt/:slug/"
 slug: android-testing-with-espresso-part-4
 redirect_from:
-- /testes-no-android-com-espresso-parte-4
-- /testes-no-android-com-espresso-parte-4/
+- "/testes-no-android-com-espresso-parte-4"
+- "/testes-no-android-com-espresso-parte-4/"
+- "/pt/android-testing-with-espresso-part-4"
+- "/pt/android-testing-with-espresso-part-4/"
 ---
 
 No [post anterior](https://heitorcolangelo.dev/pt/android-testing-with-espresso-part-3/) aprendemos como mockar as intents do Android. Caso queira iniciar a partir deste post, utilize o branch ‘part_3’ do projeto.

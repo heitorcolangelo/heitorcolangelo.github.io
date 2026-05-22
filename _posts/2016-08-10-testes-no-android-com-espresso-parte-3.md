@@ -1,6 +1,6 @@
 ---
 title: Testes no Android com Espresso — parte 3
-date: 2016-08-10 00:00:00 Z
+date: 2016-08-10 00:00:00.000000000 Z
 tags:
 - software-testing
 - android
@@ -13,11 +13,13 @@ subclass: post
 author: heitor
 lang: pt
 translation_key: espresso-part-3
-permalink: /pt/:slug/
+permalink: "/pt/:slug/"
 slug: android-testing-with-espresso-part-3
 redirect_from:
-- /testes-no-android-com-espresso-parte-3
-- /testes-no-android-com-espresso-parte-3/
+- "/testes-no-android-com-espresso-parte-3"
+- "/testes-no-android-com-espresso-parte-3/"
+- "/pt/android-testing-with-espresso-part-3"
+- "/pt/android-testing-with-espresso-part-3/"
 ---
 
 No [post anterior](https://heitorcolangelo.dev/pt/android-testing-with-espresso-part-2/) fizemos nosso primeiro teste na tela de Login. Caso queira iniciar a partir deste post, utilize o branch ‘[part\_2](https://github.com/heitorcolangelo/EspressoTests/tree/part_2)’ do projeto.

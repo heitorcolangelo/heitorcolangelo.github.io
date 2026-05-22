@@ -36,7 +36,7 @@
                         <img class="author-profile-image" src="{{ author[1].picture | relative_url }}" alt="{{ author[1].name }}" />
                         {% endif %}
                         <span class="post-card-author">
-                            <a href="{{ '/author/' | append: page.next.author | append: '/' | relative_url }}">{{ author[1].name }}</a>
+                            <a href="{{ '/author/' | append: page.next.author | relative_url }}">{{ author[1].name }}</a>
                         </span>
                     {% endif %}
                 {% endfor %}

@@ -1,0 +1,12 @@
+{% assign canonical_path = page.url | default: "/" %}
+{% if canonical_path != "/" and canonical_path != "" %}
+  {% assign canonical_path_size = canonical_path | size %}
+  {% assign canonical_path_last = canonical_path | slice: -1, 1 %}
+  {% if canonical_path_last == "/" %}
+    {% assign canonical_path_end = canonical_path_size | minus: 1 %}
+    {% assign canonical_path = canonical_path | slice: 0, canonical_path_end %}
+  {% endif %}
+  {% assign canonical_url = canonical_path | absolute_url %}
+{% else %}
+  {% assign canonical_url = site.url %}
+{% endif %}
