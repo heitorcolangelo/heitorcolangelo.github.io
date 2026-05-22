@@ -157,6 +157,31 @@ td.code {
     color: #4f5d6b;
 }
 
+.post-card-labels {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.5rem 0.75rem;
+    margin-bottom: 4px;
+}
+
+.post-card-labels .post-card-tags {
+    display: inline-block;
+    margin-bottom: 0;
+}
+
+.post-card-lang {
+    display: inline-block;
+    margin-left: 0;
+    padding: 0.2rem 0.55rem;
+    border: 1px solid #d1d9df;
+    border-radius: 999px;
+    font-size: 1.1rem;
+    letter-spacing: 0.04em;
+    color: #4f5d6b;
+    vertical-align: middle;
+}
+
 .post-full-meta a {
     color: #2d6ea3;
 }
