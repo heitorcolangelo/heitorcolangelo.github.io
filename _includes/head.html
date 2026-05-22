@@ -1,5 +1,4 @@
-{% assign canonical_path = page.url | default: "/" %}
-{% assign canonical_url = canonical_path | absolute_url %}
+{% include canonical_url.html %}
 {% assign social_image = page.cover | default: site.cover %}
 <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}" />
     <link rel="shortcut icon" href="{{ site.favicon | absolute_url }}" type="image/png" />
