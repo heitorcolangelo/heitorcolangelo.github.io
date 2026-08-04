@@ -8,9 +8,9 @@ subclass: post page
 layout: page
 ---
 
-I'm a software engineer focused on building reliable, high-quality products.
+I'm a software engineer who cares about the craft behind shipping software — clear design, honest tradeoffs, and code that teams can trust over time.
 
-I use this blog to share practical software engineering lessons on architecture, testing, and mobile development, based on real project work. I document challenges, decisions, and patterns that help teams ship better software.
+This site is my notebook in public. Most posts come from problems I hit at work: what broke, what we tried, and what actually stuck. If something here helps you avoid a dead end or make a sharper decision, it's doing its job.
 
 ## Contact
 
