@@ -31,7 +31,7 @@ In [part 1](https://heitorcolangelo.dev/en/android-testing-with-espresso-part-1/
 
 Let's start by testing the login screen. To do this, create a `LoginActivityTest` class in the `/app/src/androidTest/` directory of the project, as shown in the image below:
 
-![](https://cdn-images-1.medium.com/max/462/1*DiqC06BAa2stAKtKtJ4TUw.png)
+![](/assets/images/posts/espresso-part-2-login-test-class.png)
 
 Annotate the class we created with the `@RunWith(AndroidJUnit4.class)` annotation.
 
@@ -109,7 +109,7 @@ Espresso waits for the UI Thread to become idle to execute the next test step. H
 
 Now, to run this test, just click the right mouse button on the method and then click on the option _Run 'whenActivityIsLaunched...'_. If everything goes well, you should see the test being executed on your emulator and the test console will be like this:
 
-![Test console](https://cdn-images-1.medium.com/max/1024/1*FdQm1REF0c1wfQ5XTm6s4Q.png)
+![Test console](/assets/images/posts/espresso-part-2-test-console.png)
 
 Alright, but how do I ensure that Espresso is really working and looking at whether my views are appearing on the screen? To ensure this, let's change the first line of this test that we did:
 
@@ -117,7 +117,7 @@ Alright, but how do I ensure that Espresso is really working and looking at whet
 
 The `not()` method will invert the result we expected. So, in this test, I am saying that the view with id `login_image` **will not** be visible on the screen, which is not true, because when starting the screen, the image will be visible. So the test must fail. If we run the test again:
 
-![Test failed](https://cdn-images-1.medium.com/max/1024/1*80B6EEH6aQ23BKFehl6AFA.png)
+![Test failed](/assets/images/posts/espresso-part-2-test-failed.png)
 
 Great, our test failed, which means that Espresso is making the assertions correctly. Better than that, notice the log it shows:
 ```
@@ -214,7 +214,7 @@ Apparently Espresso couldn't click on the login button, that is, the problem is 
 
 Put a breakpoint on this line and let's see the emulator screen at this moment:
 
-![Emulator screen](https://cdn-images-1.medium.com/max/368/1*2_cNXc7l-2_qZZrHvZRy4w.png)
+![Emulator screen](/assets/images/posts/espresso-part-2-emulator-screen.png)
 
 Notice that the virtual keyboard is taking up a good part of the screen, it is even covering our login button, so Espresso cannot click on the button. To fix this problem, let's use the `closeSoftKeyboard()` method.
 

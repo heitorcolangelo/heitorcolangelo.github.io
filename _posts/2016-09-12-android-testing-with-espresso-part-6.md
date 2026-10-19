@@ -33,7 +33,7 @@ First scenario
 The UserDetailsActivity has the following layout:
 
 <p style="text-align:center;">
-  <img src="https://miro.medium.com/v2/resize:fit:696/format:webp/1*2E5Ck9MdFOVgEHsr6LvHcw.png" alt=""/>
+  <img src="/assets/images/posts/espresso-part-6-first-test.webp" alt=""/>
 </p>
 
 We have the user's photo, name, phone, email and address. This might be the first scenario: check if all the information appears on the screen. As it is a simple scenario, I will leave it as a task for you to implement.
@@ -44,7 +44,7 @@ Second scenario
 Except for the name, the user will not always have all this data and, if they do not have a phone, email or address, the message "_No info available._" should appear, in red. As shown in the image below:
 
 <p style="text-align:center;">
-  <img src="https://miro.medium.com/v2/resize:fit:684/format:webp/1*ogfkyvm6gtxJeFm-mO3rwA.png" alt="">
+  <img src="/assets/images/posts/espresso-part-6-assertion-failure.webp" alt="">
 </p>
 
 Then, another scenario is: check if the text _"No info available."_ appears when the user does not have an email, telephone or address.
@@ -76,7 +76,7 @@ Nothing new in this test, just starting the UserDetailsActivity with an intent t
 Create a _matcher_ package and a _TextColorMatcher_ class, as shown in the image below:
 
 <div style="display: flex; justify-content: center;">
-    <img src="https://miro.medium.com/v2/resize:fit:920/format:webp/1*zdJgqgZPFJeCMUWlD8kHgA.png" alt=""/>
+    <img src="/assets/images/posts/espresso-part-6-activity-test.webp" alt=""/>
 </div>
 
 The _TextColorMatcher_ class will look like this:
@@ -154,7 +154,7 @@ Runtime Permissions
 Starting from Android 6, permissions are requested during runtime. This affects our tests, because we have to handle this particular situation separately.
 
 <p style="text-align:center">
-  <img src="https://miro.medium.com/v2/resize:fit:736/format:webp/1*sZcT-X15p5IMl4D75ulCsg.png" alt="Permissão para fazer ligação"/>
+  <img src="/assets/images/posts/espresso-part-6-call-permission.webp" alt="Permissão para fazer ligação"/>
 </p>
 
 For example, we will encounter issues if we run a test like this:
@@ -200,7 +200,7 @@ To solve this problem, just follow the suggestion from the error log itself: "us
 First, create a new file _AndroidManifest.xml_ inside your _androidTest_ folder.
 
 <p style="text-align:center">
-  <img src="https://miro.medium.com/v2/resize:fit:568/format:webp/1*EDfoMAUtgkpu1PHfeSuHvw.png" alt="Novo AndroidManifest.xml">
+  <img src="/assets/images/posts/espresso-part-6-android-manifest.webp" alt="Novo AndroidManifest.xml">
 </p>
 
 Within this file, place the code below:

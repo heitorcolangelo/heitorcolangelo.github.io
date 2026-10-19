@@ -30,7 +30,7 @@ Assertions on the RecyclerView item's layout
 
 In our MainActivity, the next step is to verify whether the layout we defined for the item of our RecyclerView is displayed correctly. Let's take a look at our item's [layout](https://github.com/heitorcolangelo/EspressoTests/blob/part_4/app/src/main/res/layout/view_user_item.xml).
 
-![User Item Image](https://miro.medium.com/v2/resize:fit:1066/format:webp/1*HVEH26Qsk_S_kpETw2eKmg.png)
+![User Item Image](/assets/images/posts/espresso-part-5-user-item-layout.webp)
 
 It's a rather simple layout:
 

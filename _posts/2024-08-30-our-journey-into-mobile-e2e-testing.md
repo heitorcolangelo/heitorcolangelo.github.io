@@ -38,7 +38,7 @@ Software engineers should regularly verify if the application they are building 
 that new features, bug fixes, or improvements haven’t caused problems or disruptions. That validation is done using
 different types of tests, which are usually distributed following the testing pyramid.
 
-![](https://miro.medium.com/v2/resize:fit:1400/format:webp/1*01JvCaXqQQvgxvUGsIcv5Q.jpeg)
+![](/assets/images/posts/mobile-e2e-testing-pyramid.webp)
 
 [https://martinfowler.com/articles/practical-test-pyramid.html#TheTestPyramid](https://martinfowler.com/articles/practical-test-pyramid.html#TheTestPyramid)
 
