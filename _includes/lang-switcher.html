@@ -1,25 +1,34 @@
+{% assign pt_translation = nil %}
+{% assign en_translation = nil %}
 {% if page.translation_key and page.lang %}
-  {% assign pt_post = site.posts | where: "translation_key", page.translation_key | where: "lang", "pt" | first %}
-  {% assign en_post = site.posts | where: "translation_key", page.translation_key | where: "lang", "en" | first %}
-  <nav class="post-lang-switcher" aria-label="Post language switcher">
-    {% if pt_post %}
+  {% assign pt_translation = site.posts | where: "translation_key", page.translation_key | where: "lang", "pt" | first %}
+  {% assign en_translation = site.posts | where: "translation_key", page.translation_key | where: "lang", "en" | first %}
+{% elsif page.current == "privacy" and page.lang %}
+  {% assign privacy_pages = site.pages | where: "current", "privacy" %}
+  {% assign pt_translation = privacy_pages | where: "lang", "pt" | first %}
+  {% assign en_translation = privacy_pages | where: "lang", "en" | first %}
+{% endif %}
+
+{% if pt_translation or en_translation %}
+  <nav class="post-lang-switcher" aria-label="{% if page.lang == 'pt' %}Seletor de idioma{% else %}Language switcher{% endif %}">
+    {% if pt_translation %}
       {% if page.lang == "pt" %}
         <span class="lang-active" aria-current="page">PT</span>
       {% else %}
-        <a href="{{ pt_post.url | relative_url }}">PT</a>
+        <a href="{{ pt_translation.url | relative_url }}">PT</a>
       {% endif %}
     {% else %}
-      <span class="lang-disabled" aria-disabled="true" aria-label="Portuguese version unavailable">PT</span>
+      <span class="lang-disabled" aria-disabled="true" aria-label="{% if page.lang == 'pt' %}Versão em português indisponível{% else %}Portuguese version unavailable{% endif %}">PT</span>
     {% endif %}
     <span class="lang-separator" aria-hidden="true">|</span>
-    {% if en_post %}
+    {% if en_translation %}
       {% if page.lang == "en" %}
         <span class="lang-active" aria-current="page">EN</span>
       {% else %}
-        <a href="{{ en_post.url | relative_url }}">EN</a>
+        <a href="{{ en_translation.url | relative_url }}">EN</a>
       {% endif %}
     {% else %}
-      <span class="lang-disabled" aria-disabled="true" aria-label="English version unavailable">EN</span>
+      <span class="lang-disabled" aria-disabled="true" aria-label="{% if page.lang == 'pt' %}Versão em inglês indisponível{% else %}English version unavailable{% endif %}">EN</span>
     {% endif %}
   </nav>
 {% endif %}
