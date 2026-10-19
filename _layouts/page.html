@@ -25,6 +25,9 @@ into the {body} of the default.hbs template -->
         <article class="post-full {% if page.tags.size > 0 %}{% for tag in page.tags %} tag-{{ tag | slugify: "latin" }}{% endfor %}{% endif %} {{ page.subclass }} {% unless page.cover %}no-image{% endunless %}">
 
             <header class="post-full-header">
+                {% if page.current == 'privacy' %}
+                    {% include lang-switcher.html %}
+                {% endif %}
                 <h1 class="post-full-title">{{ page.title }}</h1>
             </header>
 
