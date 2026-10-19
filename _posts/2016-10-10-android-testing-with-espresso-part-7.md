@@ -58,7 +58,7 @@ Test the behavior.
 Focus on testing the app's behavior, don't just test layout properties. If you really need to verify the positions, use _position assertions_:
 
 <p style="text-align:center;">
-  <img src="https://miro.medium.com/v2/resize:fit:694/format:webp/1*_YqXV5KcOhZJAYYWVvZKXQ.png" alt="Position assertions"/>
+  <img src="/assets/images/posts/espresso-part-7-position-assertions.webp" alt="Position assertions"/>
 </p>
 
 Running your tests on small devices
@@ -67,7 +67,7 @@ Running your tests on small devices
 While you are running your tests on large screen devices, everything goes very well, nothing breaks. But don't forget that there are a lot of people with small devices out there, and they will want to use your app. So please, remember these people and run your tests on small devices. You will notice that many will fail, mainly because of views that are not on the screen.
 
 <div style="display: flex; justify-content: center;">
-  <img src="https://miro.medium.com/v2/resize:fit:478/format:webp/1*2RwUM2Kl7JDj66RmE2-8_Q.png" alt="Dispositivo pequeno">
+  <img src="/assets/images/posts/espresso-part-7-small-device.webp" alt="Dispositivo pequeno">
 </div>
 
 On a small device, the user's address is not visible. The test breaks.
@@ -84,7 +84,7 @@ Settings -> Accessibility -> Touch and hold delay -> LONG
 ```
 
 <p style="text-align:center;">
-  <img src="https://miro.medium.com/v2/resize:fit:480/format:webp/1*kv2M-P40FmQImu6S10o7Dw.png" alt="Property Touch and hold delay"/>
+  <img src="/assets/images/posts/espresso-part-7-touch-delay.webp" alt="Property Touch and hold delay"/>
 </p>
 
 Change the highlighted property to LONG.
@@ -100,7 +100,7 @@ TestButler, 'decontaminating' the device for the tests.
 While I was writing this series of posts, Linkedin released a lib called [TestButler](https://github.com/linkedin/test-butler). It stabilizes the emulator on which the tests are running, preventing these tests from failing due to problems in it. For example, you may have come across this situation:
 
 <p style="text-align:center;">
-  <img src="https://miro.medium.com/v2/resize:fit:578/format:webp/1*-Jyyt2Wmq6sbTDXJPwguUA.png" alt="TestButler"/>
+  <img src="/assets/images/posts/espresso-part-7-testbutler.webp" alt="TestButler"/>
 </p>
 
 This will surely break your test. The idea of TestButler is to prevent this from happening. In addition, you can also change some global settings of the emulator, such as:

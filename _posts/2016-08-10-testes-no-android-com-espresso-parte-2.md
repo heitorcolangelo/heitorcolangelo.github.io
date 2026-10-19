@@ -30,7 +30,7 @@ Na [parte 1](https://heitorcolangelo.dev/pt/android-testing-with-espresso-part-1
 
 Vamos começar testando a tela de login. Para isso, crie uma classe `LoginActivityTest` no diretório `/app/src/androidTest/` do projeto, conforme a imagem abaixo:
 
-![](https://cdn-images-1.medium.com/max/462/1*DiqC06BAa2stAKtKtJ4TUw.png)
+![](/assets/images/posts/espresso-part-2-login-test-class.png)
 
 Anote a classe que criamos com a anotação `@RunWith(AndroidJUnit4.class)`.
 
@@ -101,7 +101,7 @@ O Espresso aguarda a UI Thread ficar ociosa (idle) para executar o próximo pass
 
 Agora, para rodar este teste, basta clicar no botão direito do mouse sobre o método e depois clicar na opção _Run ‘whenActivityIsLaunched…’_. Se tudo correr bem, você deve ver o teste ser executado no seu emulador e o console de testes estará assim:
 
-![](https://cdn-images-1.medium.com/max/1024/1*FdQm1REF0c1wfQ5XTm6s4Q.png)
+![](/assets/images/posts/espresso-part-2-test-console.png)
 
 Certo, mas como eu garanto que o Espresso está realmente funcionando e olhando se minhas views estão aparecendo na tela? Para garantir isso, vamos alterar a primeira linha deste teste que fizemos:
 
@@ -109,7 +109,7 @@ Certo, mas como eu garanto que o Espresso está realmente funcionando e olhando 
 
 O método `not()` irá inverter o resultado que esperávamos. Então, estou dizendo neste teste que a view com id `login_image` **não** estará visível na tela, o que não é verdade, pois ao iniciar a tela, a imagem estará visível. Então o teste deve obrigatoriamente falhar. Se rodarmos o teste novamente:
 
-![](https://cdn-images-1.medium.com/max/1024/1*80B6EEH6aQ23BKFehl6AFA.png)
+![](/assets/images/posts/espresso-part-2-test-failed.png)
 
 Ótimo, nosso teste falhou, o que significa que o Espresso está fazendo as asserções corretamente. Melhor que isso, repare no log que ele mostra:
 ```
@@ -208,7 +208,7 @@ Aparentemente o Espresso não conseguiu efetuar o click no botão de login, ou s
 
 Coloque um _breakpoint_ nesta linha e vamos ver a tela do emulador neste momento:
 
-![](https://cdn-images-1.medium.com/max/368/1*2_cNXc7l-2_qZZrHvZRy4w.png)
+![](/assets/images/posts/espresso-part-2-emulator-screen.png)
 
 Repare que o teclado virtual está ocupando uma boa parte da tela, inclusive ele está cobrindo o nosso botão de login, por isso o Espresso não pode clicar no botão. Para corrigir este problema vamos utilizar o método _closeSoftKeyboard()._
 

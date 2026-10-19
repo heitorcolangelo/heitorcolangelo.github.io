@@ -56,7 +56,7 @@ Teste o comportamento.
 Foque em testar o comportamento do app, não fique testando propriedades de layout. Se realmente precisar verificar as posições, use _position assertions_:
 
 <p style="text-align:center;">
-  <img src="https://miro.medium.com/v2/resize:fit:694/format:webp/1*_YqXV5KcOhZJAYYWVvZKXQ.png" alt="Position assertions"/>
+  <img src="/assets/images/posts/espresso-part-7-position-assertions.webp" alt="Position assertions"/>
 </p>
 
 Position assertions from [espresso-cheat-sheet](https://google.github.io/android-testing-support-library/downloads/espresso-cheat-sheet-2.1.0.pdf).
@@ -67,7 +67,7 @@ Execute seus testes em devices pequenos.
 Enquanto você roda seus testes em devices de tela grande, tudo ocorre muito bem, nada quebra. Mas não se esqueça que tem muita gente com dispositivos pequenos por aí, e que irão querer usar o seu app. Então seja bonzinho, lembre-se destas pessoas e execute seus testes em devices pequenos. Você vai perceber que muitos vão falhar, principalmente por conta de views que não estão na tela.
 
 <div style="display: flex; justify-content: center;">
-  <img src="https://miro.medium.com/v2/resize:fit:478/format:webp/1*2RwUM2Kl7JDj66RmE2-8_Q.png" alt="Dispositivo pequeno">
+  <img src="/assets/images/posts/espresso-part-7-small-device.webp" alt="Dispositivo pequeno">
 </div>
 
 Em um dispositivo pequeno, o endereço do usuário não fica visível. O teste quebra.
@@ -84,7 +84,7 @@ Settings -> Accessibility -> Touch and hold delay -> LONG
 ```
 
 <p style="text-align:center;">
-  <img src="https://miro.medium.com/v2/resize:fit:480/format:webp/1*kv2M-P40FmQImu6S10o7Dw.png" alt="Property Touch and hold delay"/>
+  <img src="/assets/images/posts/espresso-part-7-touch-delay.webp" alt="Property Touch and hold delay"/>
 </p>
 
 Mude a propriedade destacada para LONG.
@@ -100,7 +100,7 @@ TestButler, “descontaminando” o dispositivo para os testes.
 Enquanto eu escrevia esta série de posts, o Linkedin lançou uma lib chamada [TestButler](https://github.com/linkedin/test-butler). Ela estabiliza o emulador em que os testes estão rodando, evitando que estes testes falhem por problemas nele. Por exemplo, você já deve ter se deparado com essa situação:
 
 <p style="text-align:center;">
-  <img src="https://miro.medium.com/v2/resize:fit:578/format:webp/1*-Jyyt2Wmq6sbTDXJPwguUA.png" alt="TestButler"/>
+  <img src="/assets/images/posts/espresso-part-7-testbutler.webp" alt="TestButler"/>
 </p>
 
 Isso com certeza quebrará seu teste. A ideia do TestButler é evitar que isso ocorra. Além disso, você também consegue alterar algumas configurações globais do emulador, como:

@@ -25,7 +25,7 @@ redirect_from:
 
 Using Espresso to write your UI tests can be quite repetitive and, as a consequence, boring. Most of the time you end up repeating the same methods a lot of times and you have to write a lot of code to make a simple task in your UI:
 
-![](https://cdn-images-1.medium.com/max/800/1*aanpYt1jNyWmKyO2McEfdQ.png)
+![](/assets/images/posts/kappuccino-verbose-test.png)
 
 When user types a not registered e-mail, the app shows register form.
 
@@ -33,7 +33,7 @@ Did you notice how many times the methods _onView, withId, check, matches, isDis
 
 What if we could write this test in a more concise, easy and clean way? Like this:
 
-![](https://cdn-images-1.medium.com/max/800/1*wjzVyVQZjqJMxMJxwAZrIQ.png)
+![](/assets/images/posts/kappuccino-concise-test.png)
 
 Same test, more readable
 
@@ -41,7 +41,7 @@ Well, now with [Kappuccino](https://github.com/heitorcolangelo/kappuccino) you c
 
 When you write all of this lines of code
 
-![](https://cdn-images-1.medium.com/max/800/1*N0OpkopS_n5zlxMgGHjMTA.png)
+![](/assets/images/posts/kappuccino-assertions.png)
 
 All you really want to do is: check if the views with these _ids_ (in purple) are displayed on the screen. So we used this idea and create a library so you can write your tests following this principle.
 
