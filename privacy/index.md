@@ -10,7 +10,7 @@ permalink: /privacy/
 
 This personal blog is operated by Heitor Colangelo and hosted with GitHub Pages. The site does not have a comment system or a subscription form.
 
-Cloudflare Web Analytics measures page views, page paths, and basic performance data. Cloudflare says this service does not use cookies or local storage and does not track visitors across websites. The analytics data is sent to Cloudflare to provide aggregate reports. See [Cloudflare's privacy information](https://www.cloudflare.com/privacypolicy/).
+This blog does not use analytics tools. GitHub Pages logs and stores visitors' IP addresses for security purposes. See [GitHub's privacy statement](https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement).
 
 Some posts load images from third-party hosts, and the site loads a JavaScript library from `code.jquery.com`. When your browser loads these resources, it connects to those providers. Their privacy practices apply to those requests.
 
