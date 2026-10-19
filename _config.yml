@@ -26,7 +26,7 @@ CNAME: heitorcolangelo.dev
 navigation: true
 disqus: false
 disqus_shortname: heitorcolangelo
-google_analytics_ga4: "G-CR3BJJ8FFQ"
+cloudflare_web_analytics_token: "198f317482184d0ba23a5f24fa9644f5"
 permalink: "/:title"
 plugins_dir:
 - _plugins
